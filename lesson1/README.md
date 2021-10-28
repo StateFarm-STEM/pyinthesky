@@ -19,7 +19,9 @@
     - time, latitude, longitude, altitude, temperature, humidity, pressure
 - To build and test this you will be using:
   - [Arduino Uno](https://store.arduino.cc/products/arduino-uno-rev3)
+    - ![Arduino UNO](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/arduino_uno.jpg)
   - [Breadboard](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
+    - ![Breadboard](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/breadboard.jpg)
   - [BMP-180 - Barometric Pressure/Temperature/Altitude Sensor](https://www.adafruit.com/product/1603)
     - ![BMP-180 - Barometric Pressure/Temperature/Altitude Sensor](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/bmp180.JPG)
   - [GPS](https://www.u-blox.com/en/product/neo-6-series)
