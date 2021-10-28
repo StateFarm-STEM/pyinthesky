@@ -20,7 +20,7 @@
 - To build and test this you will be using:
   - [Arduino Uno](https://store.arduino.cc/products/arduino-uno-rev3)
   - [Breadboard](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
-  - [BMP-180 - Barometric Pressure/Temperature/Altitude Sensor](Barometric Pressure/Temperature/Altitude Sensor)
+  - [BMP-180 - Barometric Pressure/Temperature/Altitude Sensor](https://www.adafruit.com/product/1603)
   - [GPS](https://www.u-blox.com/en/product/neo-6-series)
   - [Arduino SD card adapter](https://electropeak.com/micro-sd-tf-card-adapter-module)
   - [Micro SD card](https://en.wikipedia.org/wiki/SD_card)
