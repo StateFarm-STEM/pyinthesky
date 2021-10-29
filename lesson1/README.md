@@ -31,3 +31,5 @@
   - [Micro SD card](https://en.wikipedia.org/wiki/SD_card)
   - Extra temp probe jsut incase (DS18B20)
     - ![DS18B20](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/DS18B20.jpg)
+
+Feel free to checkout the links I have added in the [resource page](https://github.com/StateFarm-STEM/pyinthesky/blob/main/resources.md)
