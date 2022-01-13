@@ -30,3 +30,5 @@ Unicode issue after pressing a number<br>
 
 Video
 [Using Arduino with Python – Controlling Arduino’s LED with Python](https://www.youtube.com/watch?v=4wWqka4EbEY)
+
+![Preview](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3-new/screenshots/video-pic.png)
