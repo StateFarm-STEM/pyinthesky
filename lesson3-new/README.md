@@ -29,4 +29,4 @@ Unicode issue after pressing a number<br>
 ```Arduino_Serial.write(input_data.encode())```
 <br>
 Video<br>
-[![Video for the guide](https://img.youtube.com/vi/4wWqka4EbEY/0.jpg)](https://www.youtube.com/watch?v=4wWqka4EbEY)
+[![video](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3-new/screenshots/video-pic.png)](https://www.youtube.com/watch?v=4wWqka4EbEY)
