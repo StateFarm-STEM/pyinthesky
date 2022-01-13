@@ -20,7 +20,7 @@ Unicode issue when pressing a number
 Arduino_Serial.write(input_data.encode())
 
 Guide
-![Using Arduino with Python – Controlling Arduino’s LED with Python](https://www.electronicshub.org/controlling-arduino-led-python/)
+[Using Arduino with Python – Controlling Arduino’s LED with Python](https://www.electronicshub.org/controlling-arduino-led-python/)
 
 Video
-![Using Arduino with Python – Controlling Arduino’s LED with Python](https://www.youtube.com/watch?v=4wWqka4EbEY)
+[Using Arduino with Python – Controlling Arduino’s LED with Python](https://www.youtube.com/watch?v=4wWqka4EbEY)
