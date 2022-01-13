@@ -20,13 +20,13 @@ There are a few gotchas once you get to the part where you are trying to Run the
 ### Issues and fixes
 
 Invalid syntax - ensure all the print statements use parenthesis<br>
-ex. print (Arduino_Serial.readline())<br>
+```print (Arduino_Serial.readline())```
 <br>
 raw_input not defined - change raw_input to just input<br>
-input_data = input()<br>
+```input_data = input()```
 <br>
-Unicode issue when pressing a number
-Arduino_Serial.write(input_data.encode())
+Unicode issue after pressing a number<br>
+```Arduino_Serial.write(input_data.encode())```
 
 Video
 [Using Arduino with Python – Controlling Arduino’s LED with Python](https://www.youtube.com/watch?v=4wWqka4EbEY)
