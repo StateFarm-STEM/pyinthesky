@@ -12,7 +12,7 @@ I found it easier to follow the guide and refer to the video when needed. The vi
 
 ![Settings --> Playback speed](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3-new/screenshots/yotube-settings-playback-speed.png)
 
-Guide<br>
+Guide
 [Using Arduino with Python – Controlling Arduino’s LED with Python](https://www.electronicshub.org/controlling-arduino-led-python/)
 
 There are a few gotchas once you get to the part where you are trying to Run the module since the Python and pySerial versions have changed since this video was published. I call them out below with the fixes.
