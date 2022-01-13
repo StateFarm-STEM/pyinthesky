@@ -29,6 +29,4 @@ Unicode issue after pressing a number<br>
 ```Arduino_Serial.write(input_data.encode())```
 
 Video
-[Using Arduino with Python – Controlling Arduino’s LED with Python](https://www.youtube.com/watch?v=4wWqka4EbEY)
-<br>
 [![Video for the guide](https://img.youtube.com/vi/4wWqka4EbEY/0.jpg)](https://www.youtube.com/watch?v=4wWqka4EbEY)
