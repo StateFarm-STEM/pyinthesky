@@ -1,10 +1,16 @@
-## Getting to know your Arduino using Python
+# Welcome to lesson #3
 
-### since the above links use components that aren't in the kit we are using I found a lesson that blinks the onboard led
+## Getting started with Python on Arduino
 
-This first step will get all the setup out of the way to use get Python and the pySerial library installed. Pythong is the coding language and pySerial is needed so the code can talk to the Arduino over USB.
+### Objectives:
+- Get aquanted with Python
+- Intgrate Python with the Arduino
+- Write your first Python code
+- Make the onboard LED turn on and off
 
-I found it easier to follow the guide and refer to the video when needed. The video only has music and is very fast. You can slow this down if you like.
+I found it easier to follow the guide and refer to the video when needed. The video only has music and plays very fast. You can slow this down if you like in YouTube under settings --> Playback speed.
+
+![Settings --> Playback speed](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3-new/screenshots/yotube-settings-playback-speed.png)
 
 Guide
 [Using Arduino with Python – Controlling Arduino’s LED with Python](https://www.electronicshub.org/controlling-arduino-led-python/)
