@@ -15,7 +15,7 @@ Lessons will be broken up into short lessons students can work on by themselves 
 
 1. [[Introduction and how to get started](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson1#lesson-1-introduction-and-how-to-get-started)]
 1. Blinking lights - Arduino 101
-1. Getting started with Python on Arduino
+1. [[Getting started with Python on Arduino](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson3-new#welcome-to-lesson-3)]
 1. Working with weather sensors
 1. Tracking position
 1. Bringing all of the data together
