@@ -6,6 +6,9 @@ This first step will get all the setup out of the way to use get Python and the 
 
 I found it easier to follow the guide and refer to the video when needed. The video only has music and is very fast. You can slow this down if you like.
 
+Guide
+[Using Arduino with Python – Controlling Arduino’s LED with Python](https://www.electronicshub.org/controlling-arduino-led-python/){:target="_blank"}
+
 There are a few gotchas since Python language, runtime version, and pySerial version has changed since this video was published.
 
 ### Issues and fixes
@@ -19,8 +22,5 @@ input_data = input()<br>
 Unicode issue when pressing a number
 Arduino_Serial.write(input_data.encode())
 
-Guide
-[Using Arduino with Python – Controlling Arduino’s LED with Python](https://www.electronicshub.org/controlling-arduino-led-python/)
-
 Video
-[Using Arduino with Python – Controlling Arduino’s LED with Python](https://www.youtube.com/watch?v=4wWqka4EbEY)
+[Using Arduino with Python – Controlling Arduino’s LED with Python](https://www.youtube.com/watch?v=4wWqka4EbEY){:target="_blank"}
