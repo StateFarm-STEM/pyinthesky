@@ -33,4 +33,4 @@ Unicode issue after pressing a number<br>
 
 ### Python source code
 
-[Lesson 3 Source Code]https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3-new/python-workspace/lesson3-source/arduino-python-controll-the-led.py
+[Lesson 3 Source Code](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3-new/python-workspace/lesson3-source/arduino-python-controll-the-led.py)
