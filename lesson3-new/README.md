@@ -30,3 +30,7 @@ Unicode issue after pressing a number<br>
 
 ### Video
 [![the video](https://img.youtube.com/vi/4wWqka4EbEY/0.jpg)](https://www.youtube.com/watch?v=4wWqka4EbEY "click to watch")
+
+### Python source code
+
+[Lesson 3 Source Code]https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3-new/python-workspace/lesson3-source/arduino-python-controll-the-led.py
