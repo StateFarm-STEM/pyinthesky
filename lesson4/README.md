@@ -10,11 +10,11 @@
 ## Measure Pressure and Temperature using the BMP180
 
 #### What you will be using
-- Arduino IDE
-- Arduino Uno
-- BMP180 Sensor
-- 5 pin connector
-- Breadboard
+- [Arduino IDE](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/arduino-ide.png)
+- [Arduino Uno](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/arduino-uno-r3.png)
+- [BMP180 Sensor](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/bmp180.png)
+- [5 pin connector](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/5-pin-connector.png)
+- [Breadboard](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/breadboard.png)
 - Wires
 
 #### Note: the BMP180 Sensor didn't detect the pressure and temp accurately until I soldered the 5 pin connector to the BMP180<br>
