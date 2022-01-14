@@ -14,7 +14,7 @@
 - Breadboard
 - Wires
 <br>
-<b>Note: the BMP180 Sensor didn't detect the pressure and temp accurately until I soldered the 5 pin connector to the BMP180<br>
+<b>Note: the BMP180 Sensor didn't detect the pressure and temp accurately until I soldered the 5 pin connector to the BMP180<b><br>
 <br>
 #### Measure Pressure and Temperature using the BMP180<br>
 - Follow along this lesson to read the weather data from the DMP180 Sensor
