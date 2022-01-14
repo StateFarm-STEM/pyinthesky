@@ -35,3 +35,6 @@
 
 ### Guide
 [Python with Arduino LESSON 9 Measuring Pressure and Temperature with the BMP180 Sensor](https://toptechboy.com/python-with-arduino-lesson-9-measuring-pressure-and-temperature-with-the-bmp180-sensor/)
+
+#### Video shortcuts
+- [convert pascals to inches of mercury](https://youtu.be/z9AzZM1-Dns)
