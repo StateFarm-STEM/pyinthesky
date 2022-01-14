@@ -20,4 +20,5 @@
 <br>
 Follow along this lesson to read the weather data from the DMP180 Sensor
 <br>
-[![Python with Arduino LESSON 9: Measuring Pressure and Temperature with the BMP180 Sensor](https://toptechboy.com/python-with-arduino-lesson-9-measuring-pressure-and-temperature-with-the-bmp180-sensor/)]
+[Python with Arduino LESSON 9 Measuring Pressure and Temperature with the BMP180 Sensor](https://toptechboy.com/python-with-arduino-lesson-9-measuring-pressure-and-temperature-with-the-bmp180-sensor/)
+[Lesson 3 Source Code](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3-new/python-workspace/lesson3-source/arduino-python-controll-the-led.py)
