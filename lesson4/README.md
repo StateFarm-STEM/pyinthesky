@@ -26,7 +26,7 @@
 #### What you will be learning:
 - How to connect the BMP180 to the Arduino using a breadboard
 - How to create a new Arduino Sketch project
-    - adding the Adafruit BMP085 Library to your projecy
+    - adding the Adafruit BMP085 Library to your project
 - Write the code in the Arduino IDE and upload it to the Arduino
   - measure the temperature in celcius from the BMP180 and convert to fahrenheit
   - read the pressure in pascals and convert to inches of mercury
