@@ -1,13 +1,14 @@
 # Welcome to lesson 4
 
-## working with weather sensor data using Python
+## working with weather sensor data using the Arduino language
 
 ### Objectives:
 - Breadboard a circuit
-- Read weather sensor data using Python
-- Print the data to the serial port
+- Read weather sensor data
+- Print the weather sensor data to the serial port
 
 ### What you will be using
+- Arduino IDE
 - Arduino Uno
 - BMP180 Sensor
 - 5 pin connector
@@ -16,8 +17,8 @@
 
 #### Note: the BMP180 Sensor didn't detect the pressure and temp accurately until I soldered the 5 pin connector to the BMP180<br>
 
-### Measure Pressure and Temperature using the BMP180
+## Measure Pressure and Temperature using the BMP180
 
-#### Follow along this lesson to read the weather data from the DMP180 Sensor
+#### Guide
 [Python with Arduino LESSON 9 Measuring Pressure and Temperature with the BMP180 Sensor](https://toptechboy.com/python-with-arduino-lesson-9-measuring-pressure-and-temperature-with-the-bmp180-sensor/)
 
