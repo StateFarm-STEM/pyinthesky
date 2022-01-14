@@ -29,7 +29,7 @@ Unicode issue after pressing a number<br>
 ```Arduino_Serial.write(input_data.encode())```
 
 ### Video
-[![the video](https://img.youtube.com/vi/4wWqka4EbEY/0.jpg)](https://www.youtube.com/watch?v=4wWqka4EbEY "click to watch")
+[![the video](https://img.youtube.com/vi/4wWqka4EbEY/0.jpg)](https://www.youtube.com/watch?v=4wWqka4EbEY "click to watch")]
 
 ### Python source code
 
