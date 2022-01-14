@@ -30,7 +30,8 @@
 - Write the code in the Arduino IDE and upload it to the Arduino
   - measure the temperature in celcius from the BMP180 and convert to fahrenheit
   - read the pressure in pascals and convert to inches of mercury
-- Watch your code run on the Arduino using Arduino IDE Serial Monitor
+  - print your calculations to the Arduino's serial port
+- Watch your code run on the Arduino using Arduino IDE's serial monitor
 
 ### Guide
 [Python with Arduino LESSON 9 Measuring Pressure and Temperature with the BMP180 Sensor](https://toptechboy.com/python-with-arduino-lesson-9-measuring-pressure-and-temperature-with-the-bmp180-sensor/)
