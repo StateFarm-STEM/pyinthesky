@@ -10,7 +10,7 @@
 
 I found it easier to follow the guide and refer to the video when needed. The video only has music and plays very fast. You can slow this down if you like in YouTube under settings --> Playback speed.
 
-[![Playback speed](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3-new/screenshots/yotube-settings-playback-speed.png)]
+[![Playback speed](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3-new/screenshots/yotube-settings-playback-speed.png)
 
 ### Guide
 [Using Arduino with Python – Controlling Arduino’s LED with Python](https://www.electronicshub.org/controlling-arduino-led-python/)
@@ -29,7 +29,7 @@ Unicode issue after pressing a number<br>
 ```Arduino_Serial.write(input_data.encode())```
 
 ### Video
-[![the video](https://img.youtube.com/vi/4wWqka4EbEY/0.jpg)](https://www.youtube.com/watch?v=4wWqka4EbEY "click to watch")]
+[![the video](https://img.youtube.com/vi/4wWqka4EbEY/0.jpg)](https://www.youtube.com/watch?v=4wWqka4EbEY "click to watch")
 
 ### Python source code
 
