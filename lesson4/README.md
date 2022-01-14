@@ -10,10 +10,11 @@
 - Arduino Uno
 - BMP180 Sensor to measure temperature and pressure
 - 5 pin connector
-- Note: the BMP 180 didn't work for me until I soldered the 5 pin connector to the BMP180
 - Breadboard
 - Wires
-
+<br>
+<b>Note: the BMP 180 didn't work for me until I soldered the 5 pin connector to the BMP180
+<br>
 #### Measure Pressure and Temperature using the BMP180
 - Follow along this lesson to read the weather data from the DMP180 sensor
 [Python with Arduino LESSON 9: Measuring Pressure and Temperature with the BMP180 Sensor](https://toptechboy.com/python-with-arduino-lesson-9-measuring-pressure-and-temperature-with-the-bmp180-sensor/)
