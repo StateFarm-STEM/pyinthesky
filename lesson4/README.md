@@ -40,3 +40,6 @@
 - [how to add the Adafruit Library to the Arduino IDE](https://youtu.be/z9AzZM1-Dns?t=152)
 - [write the code and run it on the Arduino](https://youtu.be/z9AzZM1-Dns?t=396)
 - [convert pascals to inches of mercury](https://youtu.be/z9AzZM1-Dns?t=985)
+
+#### Working project
+- [sketch-arduino-bmp180-read](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-bmp180-read/sketch-arduino-bmp180-read.ino)
