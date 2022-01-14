@@ -5,6 +5,7 @@
 #### Objectives:
 - Breadboard a circuit
 - Read weather sensor data
+-   dsdsdss
 - Print the weather sensor data to the serial port
 
 ## Measure Pressure and Temperature using the BMP180
