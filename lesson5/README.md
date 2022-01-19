@@ -32,14 +32,13 @@
 - Watch your code run on the Arduino using Arduino IDE's serial monitor
 
 ### Video
+[How to use the GT U7 GPS module](https://youtu.be/7zw2ULu73DY)
 
 #### How to get the TinyGPSPlus library:
 
 Right-click the following two links and choose "save link as" saving them to the same location as your Sketch project file
 - [TinyGPSPlus.cpp](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-gps-gt-u7-read/TinyGPSPlus.cpp)
 - [TinyGPSPlus.h](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-gps-gt-u7-read/TinyGPSPlus.h)
-
-[How to use the GT U7 GPS module](https://youtu.be/7zw2ULu73DY)
 
 #### Helpful video shortcuts
 - [connect the GPS GT-U7 to the Arduino](https://youtu.be/7zw2ULu73DY?t=54)
