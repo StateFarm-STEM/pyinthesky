@@ -42,4 +42,4 @@
 - [convert pascals to inches of mercury](https://youtu.be/z9AzZM1-Dns?t=985)
 
 #### Working project
-- [sketch-arduino-bmp180-read](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-bmp180-read/sketch-arduino-bmp180-read.ino)
+- [sketch-arduino-gps-gt-u7-read](https://github.com/StateFarm-STEM/pyinthesky/tree/main/my-workspace/sketch-arduino-gps-gt-u7-read)
