@@ -27,7 +27,7 @@
 - if it works where you like to work, then great
 
 #### What you will be learning:
-- How to connect the GPS GT-U7 to the Arduino using a breadboard
+- How to connect the GPS GT-U7 to the Arduino without using a breadboard (changes it up just a little here compared to lesson 4)
 - How to create a new Arduino Sketch project using the TinyGPSPlus Library
 - Write the code in the Arduino IDE and upload it to the Arduino
   - read Latitude, Longitude, Altitude, speed, and the number of satellites you are connected to from the GPS module
