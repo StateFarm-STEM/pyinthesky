@@ -1,4 +1,4 @@
-# Welcome to lesson 5 (not ready)
+# Welcome to lesson 5
 
 ## Working with GPS sensor data using the Arduino language
 
@@ -11,7 +11,7 @@
 - Read GPS sensor data
 - Print the GPS sensor data to the serial port
 
-## Measure Pressure and Temperature using the BMP180
+## Read GPS location data using the GPS GT-U7 Module
 
 #### What you will be using:
 - [Arduino IDE](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson5/screenshots/arduino-ide.png)
@@ -21,7 +21,10 @@
 - [Breadboard](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson5/screenshots/breadboard.png)
 - Wires
 
-#### Note: the BMP180 Sensor didn't detect the pressure and temp accurately until I soldered the 5 pin connector to the BMP180<br>
+#### Note: I had some issues using the GPS module from inside my garage. Here are some things you can try to get good results...<br>
+- try working near a window with the best view of the sky
+- try taking your laptop outside
+- if it works where you like to work, then great
 
 #### What you will be learning:
 - How to connect the GPS GT-U7 to the Arduino using a breadboard
