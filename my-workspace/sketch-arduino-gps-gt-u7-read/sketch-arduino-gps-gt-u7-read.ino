@@ -1,7 +1,12 @@
 #include "TinyGPSPlus.h"
 #include <SoftwareSerial.h>
 
-SoftwareSerial serial_connection(10, 11); // RX=pin 10, TX=pin 11
+// Create the serial_connection
+//
+// be sure the pin numbers match the pins you 
+// connected the GT-U7 RX and TX to
+// RX=pin 10, TX=pin 11
+SoftwareSerial serial_connection(10, 11);
 TinyGPSPlus gps;
 
 void setup() {
