@@ -32,8 +32,8 @@
   - print your calculations to the Arduino's serial port
 - Watch your code run on the Arduino using Arduino IDE's serial monitor
 
-### Guide
-[Python with Arduino LESSON 9 Measuring Pressure and Temperature with the BMP180 Sensor](https://toptechboy.com/python-with-arduino-lesson-9-measuring-pressure-and-temperature-with-the-bmp180-sensor/)
+### Video
+[How to use the GT U7 GPS module](https://youtu.be/7zw2ULu73DY)
 
 #### Helpful video shortcuts
 - [connect the BMP180 to the Arduino](https://youtu.be/z9AzZM1-Dns?t=105)
