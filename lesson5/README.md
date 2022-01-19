@@ -25,21 +25,25 @@
 
 #### What you will be learning:
 - How to connect the GPS GT-U7 to the Arduino using a breadboard
-- How to create a new Arduino Sketch project using the TinyGPS++ Library
+- How to create a new Arduino Sketch project using the TinyGPSPlus Library
 - Write the code in the Arduino IDE and upload it to the Arduino
-  - measure Latitude, Longitude, Altitude, speed, and the number of satellites you are connected to
-  - read the pressure in pascals and convert to inches of mercury
-  - print your calculations to the Arduino's serial port
+  - read Latitude, Longitude, Altitude, speed, and the number of satellites you are connected to from the GPS module
+  - print your results to the Arduino's serial port
 - Watch your code run on the Arduino using Arduino IDE's serial monitor
 
 ### Video
+
+#### To install the library:
+
+Right-click the following two files and choose "save link as" saving them to the same location as your Sketch project file
+- [TinyGPSPlus.cpp](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-gps-gt-u7-read/TinyGPSPlus.cpp)
+- [TinyGPSPlus.h](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-gps-gt-u7-read/TinyGPSPlus.h)
+
 [How to use the GT U7 GPS module](https://youtu.be/7zw2ULu73DY)
 
 #### Helpful video shortcuts
-- [connect the BMP180 to the Arduino](https://youtu.be/z9AzZM1-Dns?t=105)
-- [how to add the TinyGPS++ Library to the Arduino IDE](https://youtu.be/z9AzZM1-Dns?t=152)
+- [connect the GPS GT-U7 to the Arduino](https://youtu.be/7zw2ULu73DY?t=54)
 - [write the code and run it on the Arduino](https://youtu.be/7zw2ULu73DY?t=180)
-- [convert pascals to inches of mercury](https://youtu.be/z9AzZM1-Dns?t=985)
 
 #### Working project
 - [sketch-arduino-gps-gt-u7-read](https://github.com/StateFarm-STEM/pyinthesky/tree/main/my-workspace/sketch-arduino-gps-gt-u7-read)
