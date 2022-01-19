@@ -33,9 +33,9 @@
 
 ### Video
 
-#### To install the library:
+#### How to get the TinyGPSPlus library:
 
-Right-click the following two files and choose "save link as" saving them to the same location as your Sketch project file
+Right-click the following two links and choose "save link as" saving them to the same location as your Sketch project file
 - [TinyGPSPlus.cpp](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-gps-gt-u7-read/TinyGPSPlus.cpp)
 - [TinyGPSPlus.h](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-gps-gt-u7-read/TinyGPSPlus.h)
 
