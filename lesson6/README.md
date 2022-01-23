@@ -31,4 +31,4 @@
 [SD Card Module with Arduino: How to Read/Write Data](https://create.arduino.cc/projecthub/electropeak/sd-card-module-with-arduino-how-to-read-write-data-37f390)
 
 #### Working project
-- [sketch-arduino-bmp180-read](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-bmp180-read/sketch-arduino-bmp180-read.ino)
+- [sketch-arduino-sdcard-write](https://github.com/StateFarm-STEM/pyinthesky/tree/main/my-workspace/sketch-arduino-sdcard-write)
