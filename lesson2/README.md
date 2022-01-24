@@ -6,7 +6,8 @@
 - none
 
 #### Objectives:
-- How to connect the Arduino
+- How to download the software
+- How to connect to the Arduino
 - Blink the onboard LED
 
 ## Blink the LED
