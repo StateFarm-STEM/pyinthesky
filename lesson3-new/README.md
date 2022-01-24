@@ -1,5 +1,12 @@
 # Welcome to lesson #3
 
+# Don't use this lesson
+<br>
+<br>
+<br>
+<br>
+<br>
+
 ## Getting started with Python on Arduino
 
 ### Objectives:
