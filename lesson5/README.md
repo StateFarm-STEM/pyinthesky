@@ -3,7 +3,7 @@
 ## Working with GPS sensor data using the Arduino language
 
 #### Pre-requisites:
-- you have successfully ran the blinky lights program on your Arduino
+- you have successfully completed the [blinky lights lesson](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson2#welcome-to-lesson-2)
 - if not, do that first
 
 #### Objectives:
