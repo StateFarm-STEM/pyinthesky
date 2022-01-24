@@ -2,6 +2,8 @@
 
 ## Getting started with Python on Arduino
 
+# SKIP THIS LESSON
+
 ### Objectives:
 - Get aquanted with Python
 - Intgrate Python with the Arduino
