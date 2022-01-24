@@ -14,7 +14,7 @@ Lessons will be broken up into short lessons students can work on by themselves 
 ### Lessons:
 
 1. [Introduction and how to get started](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson1#lesson-1-introduction-and-how-to-get-started)
-1. [Blinking lights - Arduino 101](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson2)
+1. [Blinking lights - Arduino 101](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson2#welcome-to-lesson-2)
 1. [Working with weather sensors](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4#welcome-to-lesson-4)
 1. [Tracking position](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson5#welcome-to-lesson-5)
 2. [Working with the SD card module](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson6#lesson-6-storing-the-data)
