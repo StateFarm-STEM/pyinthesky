@@ -1,12 +1,12 @@
 # pyinthesky
 
-## Py in The Sky - Python High Altitude Balloon Data Tracker
+## Py in The Sky - High Altitude Balloon Data Tracker
 
 ### This is a STEM project meant to teach the following:
 
 - Microcontroller / electronics basics
 - Introduction to coding concepts
-  - Python being the language of choice
+  - Arduino Language being the language of choice
 - Test the finished product in a high altitude balloon flight to the stratosphere (90-125k feet)
 
 Lessons will be broken up into short lessons students can work on by themselves or in small groups. 
