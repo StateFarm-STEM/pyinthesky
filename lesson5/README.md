@@ -49,3 +49,5 @@ Right-click the following two links and choose "save link as" saving them to the
 
 #### Working project
 - [sketch-arduino-gps-gt-u7-read](https://github.com/StateFarm-STEM/pyinthesky/tree/main/my-workspace/sketch-arduino-gps-gt-u7-read)
+
+### [Need help?](https://github.com/StateFarm-STEM/pyinthesky#need-some-help)
