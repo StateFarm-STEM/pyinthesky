@@ -34,3 +34,4 @@
 #### Working project
 - [sketch-blink-onboard-led](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/blink-onboard-led/blink-onboard-led.ino)
 
+### [Need help?](https://github.com/StateFarm-STEM/pyinthesky#need-some-help)
