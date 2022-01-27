@@ -43,3 +43,5 @@
 
 #### Working project
 - [sketch-arduino-bmp180-read](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-bmp180-read/sketch-arduino-bmp180-read.ino)
+
+### [Need help?](https://github.com/StateFarm-STEM/pyinthesky#need-some-help)
