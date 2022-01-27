@@ -21,7 +21,9 @@ Lessons will be broken up into short lessons students can work on by themselves 
 - Putting it all together
 
 
+### Need some help?
 
-
+- [greg @ unit5](mailto:greg.dirst.nf94@unit5.org)
+- report an issue by clicking the issue link towards the top of the page
 
 
