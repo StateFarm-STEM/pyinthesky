@@ -25,5 +25,6 @@ Lessons will be broken up into short lessons students can work on by themselves 
 
 - [Greg Dirst@Unit5](mailto:greg.dirst.nf94@unit5.org)
 - report an issue by clicking the issue link towards the top of the page
-
+- Schedule a working session
+  - not only will you expect to learn something, I also expect learn what could help the lessons be clearer and make improvements
 
