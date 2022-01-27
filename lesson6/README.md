@@ -32,3 +32,5 @@
 
 #### Working project
 - [sketch-arduino-sdcard-write](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-sdcard-write/sketch-arduino-sdcard-write.ino)
+
+### [Need help?](https://github.com/StateFarm-STEM/pyinthesky#need-some-help)
