@@ -60,7 +60,7 @@ You will now take everything you learned and apply them all into a single projec
   - initialize your variable
   - give a variable data to hang on to
   - data can be an object like the GPS module, BMP180 sensor, or the Micro SD card
-  - format a string using variables
+  - format a string using variables (voila...CSV format)
 - Learn just a little more about code structure - keep it simple!
   - readability, it should sorta read like an outline or a story (in my humble opinion) :)
   - reliability, it should always work and if it doesn't it should be able to recover
