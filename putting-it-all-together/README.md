@@ -9,7 +9,7 @@ You will now take everything you learned and apply them all into a single projec
 
 ### Lesson 1
 
-### Lesson 1
+### key points
 - you learned you will be writing code that will run on an Arduino that will fly to the stratosphere while taking measurements and gps coordinates along the way
 - you learned you will save these individual measurements and coordinates in a file on the Micro SD card
 - you learned this done every day across the US for modeling weather and predicting forecasts
