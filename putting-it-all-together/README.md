@@ -51,6 +51,12 @@ You will now take everything you learned and apply them all into a single projec
 
 ## HERE WE GO!
 
+### Pre-requisites
+- you should have a good grasp of using the breadboard to connect a module to the Arduino
+- you should have a good grasp of what part of the code needed to match the pins for each module
+- you should have completed all the lessons successfully
+- you should have a conceptual idea of how each line in the code you have written relates to what is happening when it runs
+
 ### Objectives
 - Learn how to wire the sensor and modules to the Arduino at the same time
   - we will have to change the pin numbers in the code to match the new pins you use for each module
@@ -65,3 +71,9 @@ You will now take everything you learned and apply them all into a single projec
   - readability, it should sorta read like an outline or a story (in my humble opinion) :)
   - reliability, it should always work and if it doesn't it should be able to recover
   - convert the pseudo code into code
+- Learn how to debug your code when things aren't working as expected
+
+### Extra Credit
+- functions, they help with readability and repeatable tasks
+
+
