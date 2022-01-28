@@ -1,5 +1,5 @@
 
-## Putting it all together
+## Putting it all together - still in progress
 
 You will now take everything you learned and apply them all into a single project that will take those measurements and GPS coordindates writing that information out to the Micro SD card using a data format called CSV (comma separated values).
 
