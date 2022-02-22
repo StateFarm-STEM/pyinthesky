@@ -62,10 +62,11 @@ You will now take everything you learned and apply them all into a single projec
   - we will have to change the pin numbers in the code to match the new pins you use for each module
 - Learn what psuedo code is and write the pseudo code for the new program
 - Learn just a little more about variables
-  - give it a name (naming convention is an art form)
-  - initialize your variable
+  - name a variable (naming convention is an art form)
   - give a variable data to hang on to
-  - data can be an object like the GPS module, BMP180 sensor, or the Micro SD card
+  - data can be a reference to
+    - an object like the GPS module, BMP180 sensor, or the Micro SD card
+    - a piece of information like the temperature, altitude, date & time
   - format a string using variables (voila...CSV format)
 - Learn just a little more about code structure - keep it simple!
   - readability, it should sorta read like an outline or a story (in my humble opinion) :)
