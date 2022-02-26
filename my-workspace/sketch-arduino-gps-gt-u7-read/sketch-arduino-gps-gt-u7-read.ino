@@ -3,10 +3,16 @@
 
 // Create the serial_connection
 //
-// be sure the pin numbers match the pins you 
-// connected the GT-U7 RX and TX to
-// RX=pin 10, TX=pin 11
-SoftwareSerial serial_connection(10, 11);
+// Connect the GT-U7 RX and TX to the Arduino
+// using the following connections...
+// RX=pin --> Arduino analog 10
+// TX pin --> Arduino analog 11
+//
+// In the code below on line 14 is the constructor.
+// use the RX pin number as the first argument
+// use the TX pin number as the second argument
+SoftwareSerial serial_connection(11, 10);
+
 TinyGPSPlus gps;
 
 void setup() {
