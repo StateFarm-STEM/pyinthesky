@@ -9,8 +9,8 @@
 // TX pin --> Arduino analog 11
 //
 // In the code below on line 14 is the constructor.
-// use the RX pin number as the first argument
-// use the TX pin number as the second argument
+// use the TX pin number as the first argument
+// use the RX pin number as the second argument
 SoftwareSerial serial_connection(11, 10);
 
 TinyGPSPlus gps;
