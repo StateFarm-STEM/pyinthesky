@@ -1,5 +1,30 @@
 # Here are some details about the launch
 
+## Things we need to plan for
+
+- Location of the launch
+  - Plan for a spot for each wind condition
+  - Clear of obstructions for both a good launch and one that may not go as planned
+  - School map [Google Map](https://www.google.com/maps/@40.3948635,-89.2446226,1043m/data=!3m1!1e3)
+- Weather
+  - Preferably <10mph winds
+  - Medium or no cloud cover
+  - No rain for launch and ideally landing
+- Run predictions
+  - Launch coordinates 40.3948635 -89.2446226
+  - [Links to prediciton calculators](https://www.overlookhorizon.com/how-to-launch-weather-balloons/flight-predictions/)
+    - Cambridge University Spaceflight (CUSF) Landing Predictor
+    - University of Southampton ASTRA High Altitude Balloon Planner
+    - University of Michigan Flight Prediction Tool
+    - University of Wyoming Trajectory Forecaster
+    - S3 Research Flight Predictor
+- Watch some videos to prep / know what to expect for students, mentors, staff
+  - [Top 5 questons](https://www.overlookhorizon.com/top-5-questions-for-a-weather-balloon-engineer/)
+  - [lift calculation](https://youtu.be/NxwlNnfKMHs)
+  - [preparing a ballon for launch](https://youtu.be/6_06Q_eWta8)
+  - [How to fill a balloon](https://youtu.be/5Z23L4QIgtQ)
+  - [How to launcha balloon](https://youtu.be/x5NyTzCcn9E)
+
 ## Proof of concept launch
 
 - We launched on 3/28 aproximately 4pm at Tri-Valley High school
@@ -23,29 +48,6 @@
 - Use PVC coupler for mounting point. Zip Tie int h neck before filling attaching rigging loops
 
 
-## Things we need to plan for
 
-- Location of the launch
-  - Plan for a spot for each wind condition
-  - Clear of obstructions for both a good launch and one that may not go as planned
-  - School map [Google Map](https://www.google.com/maps/@40.3948635,-89.2446226,1043m/data=!3m1!1e3)
-- Weather
-  - Preferably <10mph winds
-  - Medium or no cloud cover
-  - No rain for launch and ideally landing
-- Run predictions
-  - Launch coordinates 40.3948635 -89.2446226
-  - [links to prediciton calculators](https://www.overlookhorizon.com/how-to-launch-weather-balloons/flight-predictions/)
-    - Cambridge University Spaceflight (CUSF) Landing Predictor
-    - University of Southampton ASTRA High Altitude Balloon Planner
-    - University of Michigan Flight Prediction Tool
-    - University of Wyoming Trajectory Forecaster
-    - S3 Research Flight Predictor
-- Watch some videos to prep / know what to expect for students, mentors, staff
-  - [Top 5 questons](https://www.overlookhorizon.com/top-5-questions-for-a-weather-balloon-engineer/)
-  - [lift calculation](https://youtu.be/NxwlNnfKMHs)
-  - [preparing a ballon for launch](https://youtu.be/6_06Q_eWta8)
-  - [How to fill a balloon](https://youtu.be/5Z23L4QIgtQ)
-  - [How to launcha balloon](https://youtu.be/x5NyTzCcn9E)
 
 
