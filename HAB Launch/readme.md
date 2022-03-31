@@ -28,6 +28,7 @@
 ## Proof of concept launch
 
 - We launched on 3/28 aproximately 4pm at Tri-Valley High school
+- [Time Lapse](https://youtu.be/DzhJ7vASVg0)
 - [Video of launch](https://vimeo.com/693551736)
 
 ## Lessons Learned (first draft)
