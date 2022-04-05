@@ -72,8 +72,8 @@
 
 ### Ready to launch
 - Review who is doing what
-- Make sure everyone knows the process
-- Answer any and all questions NOW
+  - Make sure everyone knows the process
+  - Answer any and all questions NOW
 - Fill balloon
   - Ensure the balloon is managed by people and or bed sheet / blanket over it
   - Anyone touchingt he balloon should be wearing nitril / vinyl gloves
