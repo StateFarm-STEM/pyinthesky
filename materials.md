@@ -15,7 +15,7 @@
 
 
 
-| * Action | * Reuse?	| * Notes |	* Item	| * Qty | * Unit Price | * Total Price |
+| Action | Reuse?	| Notes |	Item	| Qty |  Unit Price | Total Price |
 | - | - | - | - | - | - | - |
 | Buy	| No	| We need 2 for the schools and 1 spare	| Balloon - HAB-1200	| 3	| 125	| 375| 
 | Buy	| Yes	| These are pricey but they are high quality	| 5Ft. High Altitude Balloon Parachute	| 1	| 55.5	| 55.5| 
@@ -38,4 +38,4 @@
 | Buy	| No	| Powers cameras and tracker. We need the premium Lithium cells to not stop working at -60c	| Batteries - Energizer lithium aa	| 4	| 33	| 132| 
 | Buy	| Yes	| Holds batteries for camera and tracker	| 4 way battery holders | 4	| 6	| 8	| 48| 
 | Buy	| Kind of	| Board to solder componentns so they don’t come loose when flying	| Arduino Project hats | 3	| 15	| 45| 
-| | | | | | * Total| * 2473.5|
+| | | | | | Total| 2473.5|
