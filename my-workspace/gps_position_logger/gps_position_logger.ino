@@ -12,7 +12,6 @@
 // Include required libraries
 #include <TinyGPS++.h>
 #include <SoftwareSerial.h>
-#include <SPI.h>
 #include <SD.h>
 
 // GPS Connections
@@ -22,7 +21,7 @@ static const int RXPin = 4, TXPin = 3;
 static const uint32_t GPSBaud = 9600;
 
 // SD Card Select pin
-const int chipSelect = 5;
+const int chipSelect = 10;
 
 // Write LED
 const int recLED = 7;
@@ -40,7 +39,7 @@ TinyGPSPlus gps;
 
 // SoftwareSerial connection to the GPS device
 //SoftwareSerial ss(RXPin, TXPin);
-SoftwareSerial ss(TXPin, RXPin);
+SoftwareSerial ss(RXPin, TXPin);
 
 void setup()
 {
@@ -52,6 +51,13 @@ void setup()
 
   // Start SoftwareSerial
   ss.begin(GPSBaud);
+  
+  // Dispatch incoming characters
+  while (ss.available() > 0)
+  {
+    Serial.println(F("Encoding GPS data"));
+    gps.encode(ss.read());
+  }
 
   // Initialize SD card
   if (!SD.begin(chipSelect)) {
@@ -59,7 +65,7 @@ void setup()
     //don't do anything more:
     while (1);
   }
-  Serial.println("card initialized.");
+  Serial.println("Card initialized.");
 
   // Blink LED so we know we are ready
   digitalWrite(recLED, HIGH);
@@ -82,36 +88,36 @@ void loop()
   // Turn off LED
   digitalWrite(recLED, LOW);
 
-  Serial.println("a");
-
   // See if data available
+  // NMEA data pulls down every 1 second
   while (ss.available() > 0)
-    Serial.println("b");
-    
-    if (gps.encode(ss.read()))
-      Serial.println("c");
-      
+    gps.encode(ss.read()); 
+     
+    //Serial.println("Reading GPS data");
+    digitalWrite(recLED, HIGH);
+    delay(50);
+    digitalWrite(recLED, LOW);
+
+    if (gps.location.isValid())
+    {
       // See if we have a complete GPS data string
       if (displayInfo() != "0")
-      {
-        Serial.println("d");
-        
+      {   
         // Get GPS string
         gpstext = displayInfo();
 
-
-        // Check GPS Count
-        Serial.println(gpscount);
-        if (gpscount == gpsttlcount) {
-
+        if (gpscount == gpsttlcount) 
+        {
           // LED On to indicate data to write to SD card
           digitalWrite(recLED, HIGH);
 
+          Serial.println(F("Writing to SD Card..."));
+          
           //Open the file on card for writing
           File dataFile = SD.open("gpslog.csv", FILE_WRITE);
 
-          if (dataFile) {
-
+          if (dataFile) 
+          {
             // If the file is available, write to it and close the file
             dataFile.println(gpstext);
             dataFile.close();
@@ -123,16 +129,20 @@ void loop()
           else {
             Serial.println("error opening datalog.txt");
           }
-
         }
-        // Increment GPS Count
-        gpscount = gpscount + 1;
-        if (gpscount > gpsttlcount) {
-          gpscount = 0;
-        }
-
+      } else {
+        Serial.println(F("Error displaying location."));
       }
-      Serial.println("e");
+    }
+    // Increment GPS Count
+    gpscount = gpscount + 1;
+    if (gpscount > gpsttlcount) {
+      gpscount = 0;
+    } else {
+      // Check GPS Count
+      Serial.print(F("Retrieving GPS data..."));
+      Serial.println(gpscount);
+    }
 }
 
 // Function to return GPS string
