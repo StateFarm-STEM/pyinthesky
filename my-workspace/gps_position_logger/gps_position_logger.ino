@@ -5,6 +5,26 @@
   Requires TinyGPS++ Library
   Save to SD or microSD card
 
+  bmp180 pins
+  VIN - 5v
+  GRD - gnd
+  SCL - A5 analog
+  SDA - A4 analog
+
+  GPS pins
+  TXD - 3 digital
+  RXD - 4 digital
+  GND - gnd
+  VCC - 5v
+
+  sdcard pins
+  CS - 10 digital
+  SCK - 13 digital
+  MOSI - 11 digital
+  MISO - 12 digital
+  VCC - 5v
+  GND - gnd
+
   DroneBot Workshop 2021
   https://dronebotworkshop.com/using-gps-modules/#Build_a_GPS_Position_Logger
 */
@@ -13,6 +33,13 @@
 #include <TinyGPS++.h>
 #include <SoftwareSerial.h>
 #include <SD.h>
+#include "Adafruit_BMP085.h"
+
+// BMP sensor
+Adafruit_BMP085 bmp180;
+float tempC;  // Variable for holding temp in C
+float tempF;  // Variable for holding temp in F
+float pressure; //Variable for holding pressure reading
 
 // GPS Connections
 static const int RXPin = 4, TXPin = 3;
@@ -24,7 +51,7 @@ static const uint32_t GPSBaud = 9600;
 const int chipSelect = 10;
 
 // Write LED
-const int recLED = 7;
+const int recLED = 13;
 
 // String to hold GPS data
 String gpstext;
@@ -38,8 +65,7 @@ int gpsttlcount = 30;
 TinyGPSPlus gps;
 
 // SoftwareSerial connection to the GPS device
-//SoftwareSerial ss(RXPin, TXPin);
-SoftwareSerial ss(RXPin, TXPin);
+SoftwareSerial ss(TXPin, RXPin);
 
 void setup()
 {
@@ -55,8 +81,8 @@ void setup()
   // Dispatch incoming characters
   while (ss.available() > 0)
   {
-    Serial.println(F("Encoding GPS data"));
     gps.encode(ss.read());
+    Serial.println("Encoding GPS data");
   }
 
   // Initialize SD card
@@ -67,6 +93,10 @@ void setup()
   }
   Serial.println("Card initialized.");
 
+  // not sure why, but this had to come 
+  // after sd card for some reason
+  bmp180.begin();
+  
   // Blink LED so we know we are ready
   digitalWrite(recLED, HIGH);
   delay(50);
@@ -93,60 +123,54 @@ void loop()
   while (ss.available() > 0)
     gps.encode(ss.read()); 
      
-    //Serial.println("Reading GPS data");
-    digitalWrite(recLED, HIGH);
-    delay(50);
-    digitalWrite(recLED, LOW);
+  //Serial.println("Reading GPS data");
 
-    if (gps.location.isValid())
-    {
-      // See if we have a complete GPS data string
-      if (displayInfo() != "0")
-      {   
-        // Get GPS string
-        gpstext = displayInfo();
+  if (gps.location.isValid())
+  {
+    // See if we have a complete GPS data string
+    if (getGPSInfo() != "0")
+    {   
+      // Get GPS string
+      gpstext = getGPSInfo();
 
-        if (gpscount == gpsttlcount) 
+      if (gpscount == gpsttlcount) 
+      {
+        //Serial.println(F("Writing to SD Card..."));
+        
+        //Open the file on card for writing
+        File dataFile = SD.open("gpslog.csv", FILE_WRITE);
+
+        if (dataFile) 
         {
-          // LED On to indicate data to write to SD card
-          digitalWrite(recLED, HIGH);
+          // If the file is available, write to it and close the file
+          dataFile.println(gpstext);
+          dataFile.close();
 
-          Serial.println(F("Writing to SD Card..."));
-          
-          //Open the file on card for writing
-          File dataFile = SD.open("gpslog.csv", FILE_WRITE);
-
-          if (dataFile) 
-          {
-            // If the file is available, write to it and close the file
-            dataFile.println(gpstext);
-            dataFile.close();
-
-            // Serial print GPS string for debugging
-            Serial.println(gpstext);
-          }
-          // If the file isn't open print an error message for debugging
-          else {
-            Serial.println("error opening datalog.txt");
-          }
+          // Serial print GPS string for debugging
+          Serial.println(gpstext);
         }
-      } else {
-        Serial.println(F("Error displaying location."));
+        // If the file isn't open print an error message for debugging
+        else {
+          Serial.println("error opening datalog.txt");
+        }
       }
-    }
-    // Increment GPS Count
-    gpscount = gpscount + 1;
-    if (gpscount > gpsttlcount) {
-      gpscount = 0;
     } else {
-      // Check GPS Count
-      Serial.print(F("Retrieving GPS data..."));
-      Serial.println(gpscount);
+      Serial.println("Error displaying location.");
     }
+  }
+  else
+  {
+    Serial.println("GPS location not valid.");
+  }
+  // Increment GPS Count
+  gpscount = gpscount + 1;
+  if (gpscount > gpsttlcount) {
+    gpscount = 0;
+  }
 }
 
 // Function to return GPS string
-String displayInfo()
+String getGPSInfo()
 {
   // Define empty string to hold output
   String gpsdata = "";
@@ -199,6 +223,18 @@ String displayInfo()
   {
     return "0";
   }
+
+  tempC = bmp180.readTemperature(); //  Read Temperature
+  tempF = tempC*1.8 + 32.; // Convert degrees C to F
+  pressure=bmp180.readPressure()/3386.389; //Read Pressure
+
+  gpsdata += (",");
+  gpsdata += String(tempC);
+  gpsdata += (",");
+  gpsdata += String(tempF);
+  gpsdata += (",");
+  gpsdata += String(pressure);
+
 
   // Return completed string
   return gpsdata;
