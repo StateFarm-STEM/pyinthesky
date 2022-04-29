@@ -1,149 +1,260 @@
+/*
+  GPS Position Logger
+  gps-position-logger.ino
+  Read GPS data from BN-220 or any serial GPS sensor
+  Requires TinyGPS++ Library
+  Save to SD or microSD card
 
-//==========
-// Libraries
-//==========
+  bmp180 pins
+  VIN - 5v
+  GRD - gnd
+  SCL - A5 analog
+  SDA - A4 analog
 
-// GPS libraries
-#include <TinyGPSPlus.h>
+  GPS pins
+  TXD - 3 digital
+  RXD - 4 digital
+  GND - gnd
+  VCC - 5v
+
+  sdcard pins
+  CS - 10 digital
+  SCK - 13 digital
+  MOSI - 11 digital
+  MISO - 12 digital
+  VCC - 5v
+  GND - gnd
+
+  DroneBot Workshop 2021
+  https://dronebotworkshop.com/using-gps-modules/#Build_a_GPS_Position_Logger
+*/
+
+// Include required libraries
+#include <TinyGPS++.h>
 #include <SoftwareSerial.h>
-//#include <Sodaq_DS3231.h>
-
-// SD Card libraries
-#include <SPI.h>
 #include <SD.h>
+#include "Adafruit_BMP085.h"
 
-// BMP180 libraries
-#include "Wire.h"    // imports the wire library for talking over I2C 
-#include "Adafruit_BMP085.h"  // import the fPrs Sensor Library
+// BMP sensor
+Adafruit_BMP085 bmp180;
+float tempC;  // Variable for holding temp in C
+float tempF;  // Variable for holding temp in F
+float pressure; //Variable for holding pressure reading
 
-//=================
-// Global variables
-//=================
+// GPS Connections
+static const int RXPin = 4, TXPin = 3;
 
-// Connect the RXD pin on the GPS to the Arduino digital 5 pin
-// Connect the TXD pin oo the GPS to the Arduino digital 6 pin
-// pass TXD pin number 6 as the first argument, followed by the RXD pin number 5
-SoftwareSerial serialGPS(6, 5); // serial_conn
+// GPS Baud rate (change if required)
+static const uint32_t GPSBaud = 9600;
+
+// SD Card Select pin
+const int chipSelect = 10;
+
+// Write LED
+const int recLED = 7;
+
+// String to hold GPS data
+String gpstext;
+
+// GPS write delay counter variables
+// Change gpsttlcount as required
+int gpscount = 0;
+int gpsttlcount = 30;
+
+// TinyGPS++ object
 TinyGPSPlus gps;
-Adafruit_BMP085 bmp180;  // create sensor object called bmp180
-String sCSV = "";
 
-//===================
-// Main Code Sections
-//===================
+// SoftwareSerial connection to the GPS device
+SoftwareSerial ss(TXPin, RXPin);
 
-//void writeToFile(String fileName, String contentToWrite){
-//    dataFile = SD.open(fileName, FILE_WRITE);
-//    dataFile.println(contentToWrite);
-//    dataFile.close();
-//}
-
-String getTime(){
+void blinky()
+{
+  // Blink LED so we know we are ready
+  digitalWrite(recLED, HIGH);
+  delay(50);
+  digitalWrite(recLED, LOW);
+  delay(50);
+  digitalWrite(recLED, HIGH);
+  delay(50);
+  digitalWrite(recLED, LOW);
+  delay(50);
+  digitalWrite(recLED, HIGH);
+  delay(50);
+  digitalWrite(recLED, LOW);
   
-  String timeString = "";
+}
+
+void setup()
+{
+  // Set LED pin as output
+  pinMode(recLED, OUTPUT);
+
+  pinMode(10, OUTPUT); // Add this line
+  digitalWrite(10, HIGH); // Add this line  
+
+  // Start Serial Monitor for debugging
+  Serial.begin(115200);
+
+  // Start SoftwareSerial
+  ss.begin(GPSBaud);
   
-  if (gps.time.isValid())
+  // Dispatch incoming characters
+  while (ss.available() > 0)
   {
-    if (gps.time.hour() < 10) timeString += F("0");
-    timeString += String(gps.time.hour()) + F(":");
-    
-    if (gps.time.minute() < 10) timeString += F("0");
-    timeString += String(gps.time.minute()) + F(":");
-    
-    if (gps.time.second() < 10) timeString += F("0");
-    timeString += String(gps.time.second());
-//    timeString += String(gps.time.second()) + F(".");
-    
-//    timeString += String(gps.time.centisecond());
+    gps.encode(ss.read());
+    Serial.println("Encoding GPS data");
+  }
+
+  // Initialize SD card
+  if (!SD.begin(chipSelect)) {
+    Serial.println("Card failed, or not present");
+    //don't do anything more:
+    while (1);
+  }
+  Serial.println("Card initialized.");
+
+  // not sure why, but this had to come 
+  // after sd card for some reason
+  bmp180.begin();
+  
+  // Blink LED so we know we are ready
+  digitalWrite(recLED, HIGH);
+  delay(50);
+  digitalWrite(recLED, LOW);
+  delay(50);
+  digitalWrite(recLED, HIGH);
+  delay(50);
+  digitalWrite(recLED, LOW);
+  delay(50);
+  digitalWrite(recLED, HIGH);
+  delay(50);
+  digitalWrite(recLED, LOW);
+
+}
+
+void loop()
+{
+
+  // Turn off LED
+  digitalWrite(recLED, LOW);
+
+  // See if data available
+  // NMEA data pulls down every 1 second
+  while (ss.available() > 0)
+    gps.encode(ss.read()); 
+     
+  //Serial.println("Reading GPS data");
+
+  if (gps.location.isValid())
+  {
+    // See if we have a complete GPS data string
+    if (displayInfo() != "0")
+    {   
+      // Get GPS string
+      gpstext = displayInfo();
+      
+      if (gpscount == gpsttlcount) 
+      {
+        //Serial.println(F("Writing to SD Card..."));
+        
+        //Open the file on card for writing
+        File dataFile = SD.open("gpslog.csv", FILE_WRITE);
+
+        if (dataFile) 
+        {
+          // If the file is available, write to it and close the file
+          dataFile.println(gpstext);
+          dataFile.close();
+
+          // Serial print GPS string for debugging
+          //Serial.println(gpstext);
+          blinky();
+
+          delay(120000);
+        }
+        // If the file isn't open print an error message for debugging
+        else {
+          Serial.println("error opening datalog.txt");
+        }
+      }
+    } else {
+      Serial.println("Error displaying location.");
+    }
   }
   else
   {
-    return F("INVALID");
+    Serial.println("GPS location not valid.");
+    //Serial.print("GPS serial overflow:");Serial.println(ss.overflow());  // For GPS serial troubleshooting
   }
-
-  return timeString;
-}
-
-// put your setup code here, to run once:
-void setup() {
-
-  // set the digital pin to the onboard LED:
-  //pinMode(LED_BUILTIN, OUTPUT);
-
-  // open serial port
-  // over the USB cable
-  Serial.begin(9600);
-  while (!Serial) {
-    ; // wait for serial port to connect. Needed for native USB port only
-  }
-  
-  // open gps
-  serialGPS.begin(9600);
-  
-  // open bmp180
-  if (!bmp180.begin()) {
-    Serial.println("Could not find a valid BMP085 sensor, check wiring!");
-    while(1){}
-  }
-  
-  // open sd card
-  if (!SD.begin(10)) {
-    Serial.println("initialization failed!");
-    while (1);
+  // Increment GPS Count
+  gpscount = gpscount + 1;
+  if (gpscount > gpsttlcount) {
+    gpscount = 0;
   }
 }
 
-// put your main code here, to run repeatedly:
-void loop() {
-
-  sCSV = "";
-
-  // while there is information available to
-  // read from the gps module
-  //    read the data
-  while(serialGPS.available()){
-    gps.encode(serialGPS.read());
-  }
-
-  if(gps.location.isUpdated()){
-    
-    if (gps.location.isValid()){
-    
-      // read the values we are interested in and store in a variable
-
-      // time info
-      String sTime = getTime();
+String displayInfo()
+{
+  String gpsdata = "";
   
-      // gps info
-      String sSat = String(gps.satellites.value(), DEC);
-      String sLat = String(gps.location.lat(),6);
-      String sLng = String(gps.location.lng(),6);
-      String sSpd = String(gps.speed.mph());
-      String sAlt = String(gps.altitude.feet());
+  if (gps.location.isValid())
+  {
+    gpsdata += String(gps.location.lat(), 6);
+    gpsdata += String(F(","));
+    gpsdata += String(gps.location.lng(), 6);
+  }
+  else
+  {
+    gpsdata += String(F("INVALID"));
+  }
 
+  gpsdata += String(F(","));
+
+  if (gps.date.isValid())
+  {
+    gpsdata += String(gps.date.month());
+    gpsdata += String(F("/"));
+    gpsdata += String(gps.date.day());
+    gpsdata += String(F("/"));
+    gpsdata += String(gps.date.year());
+  }
+  else
+  {
+    gpsdata += String(F("INVALID"));
+  }
+
+  gpsdata += String(F(","));
   
-      // sensor info
-      float fCel = bmp180.readTemperature(); //  Read degrees C
-      float fFer = fCel*1.8 + 32.; // Convert degrees C to F
-      String sCel = String(fCel, 6);
-      String sFer = String(fFer, 6);
-      // TODO: convert pressure
-      String sPrs = String(bmp180.readPressure(), 6);
-      
-      // store the values we read above in a string using CSV format
-      
-      // time,sat,lat,lng,alt,spd,cel,fehr,press,hum
-      // TODO: add humidity
-      sCSV = sTime + "," + sSat + "," + sLat + "," + sLng + "," + sAlt + "," + sSpd + "," + sCel + "," + sFer + "," + sPrs;
-//      Serial.println(sCSV);
-    }
+  if (gps.time.isValid())
+  {
+    if (gps.time.hour() < 10) gpsdata += String(F("0"));
+    gpsdata += String(gps.time.hour());
+    gpsdata += String(F(":"));
+    if (gps.time.minute() < 10) gpsdata += String(F("0"));
+    gpsdata += String(gps.time.minute());
+    gpsdata += String(F(":"));
+    if (gps.time.second() < 10) gpsdata += String(F("0"));
+    gpsdata += String(gps.time.second());
+    gpsdata += String(F("."));
+    if (gps.time.centisecond() < 10) gpsdata += String(F("0"));
+    gpsdata += String(gps.time.centisecond());
+  }
+  else
+  {
+    gpsdata += String(F("INVALID"));
   }
 
-  if(sCSV != ""){
-    Serial.println(sCSV);
-//    dataFile = SD.open("flight.log", FILE_WRITE);
-//    dataFile.println(sCSV);
-//    dataFile.close();
-    delay(5000);
-  }
+  gpsdata += String(F(","));
+
+  tempC = bmp180.readTemperature(); //  Read Temperature
+  tempF = tempC*1.8 + 32.; // Convert degrees C to F
+  pressure=bmp180.readPressure()/3386.389; //Read Pressure
+
+  gpsdata += String(tempC);
+  gpsdata += String(F(","));
+  gpsdata += String(tempF);
+  gpsdata += String(F(","));
+  gpsdata += String(pressure);
+
+  return gpsdata;
 }
