@@ -51,7 +51,7 @@ static const uint32_t GPSBaud = 9600;
 const int chipSelect = 10;
 
 // Write LED
-const int recLED = 13;
+const int recLED = 7;
 
 // String to hold GPS data
 String gpstext;
@@ -67,10 +67,30 @@ TinyGPSPlus gps;
 // SoftwareSerial connection to the GPS device
 SoftwareSerial ss(TXPin, RXPin);
 
+void blinky()
+{
+  // Blink LED so we know we are ready
+  digitalWrite(recLED, HIGH);
+  delay(50);
+  digitalWrite(recLED, LOW);
+  delay(50);
+  digitalWrite(recLED, HIGH);
+  delay(50);
+  digitalWrite(recLED, LOW);
+  delay(50);
+  digitalWrite(recLED, HIGH);
+  delay(50);
+  digitalWrite(recLED, LOW);
+  
+}
+
 void setup()
 {
   // Set LED pin as output
   pinMode(recLED, OUTPUT);
+
+  pinMode(10, OUTPUT); // Add this line
+  digitalWrite(10, HIGH); // Add this line  
 
   // Start Serial Monitor for debugging
   Serial.begin(115200);
@@ -128,11 +148,11 @@ void loop()
   if (gps.location.isValid())
   {
     // See if we have a complete GPS data string
-    if (getGPSInfo() != "0")
+    if (displayInfo() != "0")
     {   
       // Get GPS string
-      gpstext = getGPSInfo();
-
+      gpstext = displayInfo();
+      
       if (gpscount == gpsttlcount) 
       {
         //Serial.println(F("Writing to SD Card..."));
@@ -147,7 +167,10 @@ void loop()
           dataFile.close();
 
           // Serial print GPS string for debugging
-          Serial.println(gpstext);
+          //Serial.println(gpstext);
+          blinky();
+
+          delay(120000);
         }
         // If the file isn't open print an error message for debugging
         else {
@@ -161,6 +184,7 @@ void loop()
   else
   {
     Serial.println("GPS location not valid.");
+    //Serial.print("GPS serial overflow:");Serial.println(ss.overflow());  // For GPS serial troubleshooting
   }
   // Increment GPS Count
   gpscount = gpscount + 1;
@@ -169,73 +193,69 @@ void loop()
   }
 }
 
-// Function to return GPS string
-String getGPSInfo()
+String displayInfo()
 {
-  // Define empty string to hold output
   String gpsdata = "";
-
-  // Get latitude and longitude
+  
   if (gps.location.isValid())
   {
-    gpsdata = String(gps.location.lat(), 6);
-    gpsdata += (",");
+    gpsdata += String(gps.location.lat(), 6);
+    gpsdata += String(F(","));
     gpsdata += String(gps.location.lng(), 6);
-    gpsdata += (",");
   }
   else
   {
-    return "0";
+    gpsdata += String(F("INVALID"));
   }
 
-  // Get Date
+  gpsdata += String(F(","));
+
   if (gps.date.isValid())
   {
-    gpsdata += String(gps.date.year());
-    gpsdata += ("-");
-    if (gps.date.month() < 10) gpsdata += ("0");
     gpsdata += String(gps.date.month());
-    gpsdata += ("-");
-    if (gps.date.day() < 10) gpsdata += ("0");
+    gpsdata += String(F("/"));
     gpsdata += String(gps.date.day());
+    gpsdata += String(F("/"));
+    gpsdata += String(gps.date.year());
   }
   else
   {
-    return "0";
+    gpsdata += String(F("INVALID"));
   }
 
-  // Space between date and time
-  gpsdata += (" ");
-
-  // Get time
+  gpsdata += String(F(","));
+  
   if (gps.time.isValid())
   {
-    if (gps.time.hour() < 10) gpsdata += ("0");
+    if (gps.time.hour() < 10) gpsdata += String(F("0"));
     gpsdata += String(gps.time.hour());
-    gpsdata += (":");
-    if (gps.time.minute() < 10) gpsdata += ("0");
+    gpsdata += String(F(":"));
+    if (gps.time.minute() < 10) gpsdata += String(F("0"));
     gpsdata += String(gps.time.minute());
-    gpsdata += (":");
-    if (gps.time.second() < 10) gpsdata += ("0");
+    gpsdata += String(F(":"));
+    if (gps.time.second() < 10) gpsdata += String(F("0"));
     gpsdata += String(gps.time.second());
+    gpsdata += String(F("."));
+    if (gps.time.centisecond() < 10) gpsdata += String(F("0"));
+    gpsdata += String(gps.time.centisecond());
   }
   else
   {
-    return "0";
+    gpsdata += String(F("INVALID"));
   }
+
+  gpsdata += String(F(","));
 
   tempC = bmp180.readTemperature(); //  Read Temperature
   tempF = tempC*1.8 + 32.; // Convert degrees C to F
   pressure=bmp180.readPressure()/3386.389; //Read Pressure
 
-  gpsdata += (",");
   gpsdata += String(tempC);
-  gpsdata += (",");
+  gpsdata += String(F(","));
   gpsdata += String(tempF);
-  gpsdata += (",");
+  gpsdata += String(F(","));
   gpsdata += String(pressure);
 
-
-  // Return completed string
   return gpsdata;
 }
+
