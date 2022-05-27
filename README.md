@@ -8,6 +8,8 @@
 - Introduction to coding concepts
   - Arduino Language being the language of choice
 - Test the finished product in a high altitude balloon flight to the stratosphere (90-125k feet)
+- Collect telemetry data and retreive logged data
+- Analyze collected data
 
 Lessons will be broken up into short lessons students can work on by themselves or in small groups. 
 
@@ -19,11 +21,12 @@ Lessons will be broken up into short lessons students can work on by themselves 
 - [Working with the GPS module](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson5#welcome-to-lesson-5)
 - [Working with the SD card module](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson6#lesson-6-storing-the-data)
 - [Putting it all together - evolving](https://github.com/StateFarm-STEM/pyinthesky/blob/main/putting-it-all-together/README.md#putting-it-all-together)
-
+- [Analyzing telemetry and log data](https://github.com/StateFarm-STEM/pyinthesky/blob/main/telemetry-analysis/README.md)
 
 ### Need some help?
 
 - [Greg Dirst@Unit5](mailto:greg.dirst.nf94@unit5.org)
+- [Andrew Blessing@Unit5](mailto:andrew.blessing.jij8@unit5.org)
 - report an issue by clicking the issue link towards the top of the page
 - Schedule a working session with your mentor and myself or between each other
 - Reach out to other students in other groups and bring back to your group what you learned
