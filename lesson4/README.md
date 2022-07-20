@@ -1,4 +1,4 @@
-# Welcome to lesson 5
+# Welcome to Lesson #4: GPS Sensor
 
 ## Working with GPS sensor data using the Arduino language
 

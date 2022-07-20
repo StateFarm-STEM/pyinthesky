@@ -1,4 +1,4 @@
-# Welcome to lesson 4
+# Welcome to Lesson #3: Weather Sensor
 
 ## Working with weather sensor data using the Arduino language
 

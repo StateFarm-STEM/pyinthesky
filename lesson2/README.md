@@ -1,4 +1,4 @@
-# Welcome to lesson 2
+# Welcome to Lesson #2: Arduino Basics
 
 ## Arduino Basics: Blink the built-in LED on the Arduino
 

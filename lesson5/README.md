@@ -1,4 +1,4 @@
-# Lesson #6. Storing the data
+# Welcome to Lesson #6: Storing the data
 
 ## Working with SD card using the Arduino language
 
