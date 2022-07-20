@@ -6,14 +6,15 @@
 - none
 
 #### Objectives:
-- How to download the software
-- How to connect to the Arduino
-- Blink the onboard LED
+- How to download the Arduino IDE software
+- How to connect to the Arduino to your computer
+- Make the onboard LED blink 
 
 ## Blink the LED
 
 #### What you will be using:
-- [Arduino IDE](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/arduino-ide.png)
+- [Arduino IDE picture](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/arduino-ide.png)
+- [Link to Arduino IDE download](https://www.arduino.cc/en/software)
 - [Arduino Uno](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/arduino-uno-r3.png)
 
 #### What you will be learning:
