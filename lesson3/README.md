@@ -1,3 +1,4 @@
+
 # Welcome to Lesson #3: Weather Sensor
 
 ## Working with weather sensor data using the Arduino language
@@ -27,7 +28,7 @@
 - How to connect the BMP180 to the Arduino using a breadboard
 - How to create a new Arduino Sketch project using the Adafruit BMP085 Library
 - Write the code in the Arduino IDE and upload it to the Arduino
-  - measure the temperature in celcius from the BMP180 and convert to fahrenheit
+  - measure the temperature in Celsius from the BMP180 and convert to Fahrenheit
   - read the pressure in pascals and convert to inches of mercury
   - print your calculations to the Arduino's serial port
 - Watch your code run on the Arduino using Arduino IDE's serial monitor
@@ -41,10 +42,9 @@
 - [write the code and run it on the Arduino](https://youtu.be/z9AzZM1-Dns?t=396)
 - [convert pascals to inches of mercury](https://youtu.be/z9AzZM1-Dns?t=985)
 ### Tips
-- the color of the wires do not matter as long as they are conntected to the right pins
+- the color of the wires do not matter as long as they are connected to the right pins
 - ![Here is a wiring diagram](https://github.com/StateFarm-STEM/pyinthesky/blob/lesson-3-continued/lesson3/screenshots/bmpdiagram.png)
 - make sure that you have the librarys installed [found here](https://learn.adafruit.com/bmp085/using-the-bmp085)
-
 
 
 
@@ -52,8 +52,7 @@
 - if you get an error code that looks like this `fatal error: Adafruit_I2CDevice.h` you are missing the BusIO library, follow [this guide](https://www.chippiko.com/ii2cdevice-no-such-file) to solve this issue
 - After you run the code if you don't see data, make sure to open your serial monitor. ctrl + shift + m or enter the tools menu and select the serial monitor. 
 - if you get in error like this one <code>Error opening serial port 'COM3'. (Port not found)
-</code> while attempting to open your serial monitor, insure that your arduino is still plugged in and everything is wired correctly
-
+</code> while attempting to open your serial monitor, insure that your Arduino is still plugged in and everything is wired correctly
 
 #### Working Code - Do you really want to just copy and paste it?
 - [sketch-arduino-bmp180-read](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-bmp180-read/sketch-arduino-bmp180-read.ino)
