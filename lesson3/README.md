@@ -43,7 +43,7 @@
 ### Tips
 - the color of the wires do not matter as long as they are conntected to the right pins
 - ![Here is a wiring diagram](https://github.com/StateFarm-STEM/pyinthesky/blob/lesson-3-continued/lesson3/screenshots/bmpdiagram.png)
-
+- make sure that you have the librarys installed [found here](https://learn.adafruit.com/bmp085/using-the-bmp085)
 
 
 
@@ -55,7 +55,7 @@
 </code> while attempting to open your serial monitor, insure that your arduino is still plugged in and everything is wired correctly
 
 
-#### Working project
+#### Working Code - Do you really want to just copy and paste it?
 - [sketch-arduino-bmp180-read](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-bmp180-read/sketch-arduino-bmp180-read.ino)
 
 ### [Need help?](https://github.com/StateFarm-STEM/pyinthesky#need-some-help)
