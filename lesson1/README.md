@@ -20,19 +20,19 @@
 - To build and test this you will be using:
   - ### [Arduino Uno](https://store.arduino.cc/products/arduino-uno-rev3)
   - This is a microcontroller. It is used to run code that stores data gathered from the onboard sensors.
-    - ![Arduino UNO](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/arduino_uno.jpg)
+    - ![Arduino UNO](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/photos/arduino_uno.jpg)
   - ### [Breadboard](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all)
   -  This is used to prototype wiring and test to make sure things work before committing to soldering components together.
-    - ![Breadboard](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/breadboard2.jpg)
+    - ![Breadboard](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/photos/breadboard.jpg)
   - ### [BMP-180 - Barometric Pressure/Temperature/Altitude Sensor](https://www.adafruit.com/product/1603)
   - This is used to get the barometric pressure, and temperature of the air surrounding it, as well as the altitude that the sensor is at. This data is recorded every 30 seconds to the micro-SD card
     - <img src="https://github.com/StateFarm-STEM/pyinthesky/blob/lesson-3-continued/lesson1/photos/BMP_both.jpg" width="1000" >
   - ### [GPS Module](https://www.u-blox.com/en/product/neo-6-series)
   - This is how the balloon determines its latitude and longitude. The Arduino tells the GPS module to record its position every 30 seconds to the micro-SD card.
-    - ![GPS NEO-6M](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/GPS_NEO-6M.JPG)
+    - ![GPS NEO-6M](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/photos/GPS_NEO-6M.JPG)
   - ### [Arduino SD card adapter](https://electropeak.com/micro-sd-tf-card-adapter-module)
   - This is how the micro-SD card is used by the Arduino to record data. It takes the data that the Arduino is giving it and writes it onto the micro-SD card.
-    - ![SD Card Adapter](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/sd_card_module.jpg)
+    - ![SD Card Adapter](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/photos/sd_card_module.jpg)
     
   - ### [Micro SD card](https://en.wikipedia.org/wiki/SD_card)
   - This stores all the data so you can access it later. 
