@@ -44,7 +44,7 @@
 ### Tips
 - the color of the wires do not matter as long as they are connected to the right pins
 - Here is a wiring diagram
-- ![Here is a wiring diagram](https://github.com/StateFarm-STEM/pyinthesky/blob/lesson-3-continued/lesson3/screenshots/bmpdiagram.png)
+- ![Here is a wiring diagram]https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3/screenshots/bmpdiagram.png)
 - make sure that you have the librarys installed [found here](https://learn.adafruit.com/bmp085/using-the-bmp085)
 
 
