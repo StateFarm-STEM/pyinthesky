@@ -20,7 +20,7 @@
 - [GPS GT-U7 Sensor (GPS NEO 6M clone)](https://github.com/StateFarm-STEM/pyinthesky/blob/lesson-3-continued/lesson4/screenshots/gps-gt-u7.png)
 - [5 pin connector](https://raw.githubusercontent.com/StateFarm-STEM/pyinthesky/lesson-3-continued/lesson4/screenshots/2076789.webp)
 - [Breadboard](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson5/screenshots/breadboard.png)
-- Wires
+- [Jumper Wires](https://github.com/StateFarm-STEM/pyinthesky/blob/lesson-3-continued/lesson4/screenshots/4635-02.jpg)
 
 #### Note: I had some issues using the GPS module from inside my garage. Here are some things you can try to get good results...<br>
 - try working near a window with the best view of the sky
