@@ -26,7 +26,7 @@
     - ![Breadboard](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/breadboard2.jpg)
   - ### [BMP-180 - Barometric Pressure/Temperature/Altitude Sensor](https://www.adafruit.com/product/1603)
   - This is used to get the barometric pressure, and temperature of the air surrounding it, as well as the altitude that the sensor is at. This data is recorded every 30 seconds to the micro-SD card
-    - <img src="lesson1/photos/BMP_both.jpg" width="100" >
+    - <img src="StateFarm-STEM/pyinthesky/blob/lesson-3-continued/lesson1/photos/BMP_both.jpg" width="100" >
   - ### [GPS Module](https://www.u-blox.com/en/product/neo-6-series)
   - This is how the balloon determines its latitude and longitude. The Arduino tells the GPS module to record its position every 30 seconds to the micro-SD card.
     - ![GPS NEO-6M](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/GPS_NEO-6M.JPG)
