@@ -1,3 +1,4 @@
+
 # Welcome to Lesson #3: Weather Sensor
 
 ## Working with weather sensor data using the Arduino language
@@ -16,10 +17,10 @@
 #### What you will be using:
 - [Arduino IDE](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/arduino-ide.png)
 - [Arduino Uno](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/arduino-uno-r3.png)
-- [BMP180 Sensor](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/bmp180.png)
+- [BMP180 Sensor](https://github.com/StateFarm-STEM/pyinthesky/blob/lesson-3-continued/lesson3/screenshots/BMP%20both%20(2).jpg)
 - [5 pin connector](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/5-pin-connector.png)
 - [Breadboard](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/breadboard.png)
-- Wires
+- [Jumper Wires](https://github.com/StateFarm-STEM/pyinthesky/blob/lesson-3-continued/lesson4/screenshots/4635-02.jpg)
 
 #### Note: the BMP180 Sensor didn't detect the pressure and temp accurately until I soldered the 5 pin connector to the BMP180<br>
 
@@ -27,7 +28,7 @@
 - How to connect the BMP180 to the Arduino using a breadboard
 - How to create a new Arduino Sketch project using the Adafruit BMP085 Library
 - Write the code in the Arduino IDE and upload it to the Arduino
-  - measure the temperature in celcius from the BMP180 and convert to fahrenheit
+  - measure the temperature in Celsius from the BMP180 and convert to Fahrenheit
   - read the pressure in pascals and convert to inches of mercury
   - print your calculations to the Arduino's serial port
 - Watch your code run on the Arduino using Arduino IDE's serial monitor
@@ -40,12 +41,21 @@
 - [how to add the Adafruit Library to the Arduino IDE](https://youtu.be/z9AzZM1-Dns?t=152)
 - [write the code and run it on the Arduino](https://youtu.be/z9AzZM1-Dns?t=396)
 - [convert pascals to inches of mercury](https://youtu.be/z9AzZM1-Dns?t=985)
+### Tips
+- the color of the wires do not matter as long as they are connected to the right pins
+- Here is a wiring diagram
+- ![Here is a wiring diagram](https://github.com/StateFarm-STEM/pyinthesky/blob/lesson-3-continued/lesson3/screenshots/bmpdiagram.png)
+- make sure that you have the librarys installed [found here](https://learn.adafruit.com/bmp085/using-the-bmp085)
 
-#### Working project
-- [sketch-arduino-bmp180-read](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-bmp180-read/sketch-arduino-bmp180-read.ino)
 
-### [Need help?](https://github.com/StateFarm-STEM/pyinthesky#need-some-help)
+
+### Trouble shooting
 - if you get an error code that looks like this `fatal error: Adafruit_I2CDevice.h` you are missing the BusIO library, follow [this guide](https://www.chippiko.com/ii2cdevice-no-such-file) to solve this issue
 - After you run the code if you don't see data, make sure to open your serial monitor. ctrl + shift + m or enter the tools menu and select the serial monitor. 
 - if you get in error like this one <code>Error opening serial port 'COM3'. (Port not found)
-</code> while attempting to open your serial monitor, insure that your arduino is still plugged in and everything is wired correctly
+</code> while attempting to open your serial monitor, insure that your Arduino is still plugged in and everything is wired correctly
+
+#### Working Code - Do you really want to just copy and paste it?
+- [sketch-arduino-bmp180-read](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-bmp180-read/sketch-arduino-bmp180-read.ino)
+
+### [Need help?](https://github.com/StateFarm-STEM/pyinthesky#need-some-help)

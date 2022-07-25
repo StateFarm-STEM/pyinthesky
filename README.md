@@ -17,8 +17,8 @@ Lessons will be broken up into short lessons students can work on by themselves 
 
 - [Introduction and how to get started](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson1#lesson-1-introduction-and-how-to-get-started)
 - [Blinking lights - Arduino 101](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson2#welcome-to-lesson-2)
-- [Working with the weather sensor](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4#welcome-to-lesson-4)
-- [Working with the GPS module](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson5#welcome-to-lesson-5)
+- [Working with the weather sensor](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson3)
+- [Working with the GPS module](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson4)
 - [Working with the SD card module](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson6#lesson-6-storing-the-data)
 - [Putting it all together - evolving](https://github.com/StateFarm-STEM/pyinthesky/blob/main/putting-it-all-together/README.md#putting-it-all-together)
 - [Analyzing telemetry and log data](https://github.com/StateFarm-STEM/pyinthesky/blob/main/telemetry-analysis/README.md)
