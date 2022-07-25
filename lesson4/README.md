@@ -10,9 +10,9 @@
 - Breadboard a circuit
 - Read GPS sensor data
 - Print the GPS sensor data to the serial port
-- Monitor data on the serial monitor
+- Monitor data on the serial monitor in the Arduino IDE
 
-## Read GPS location data using the GPS GT-U7 Module
+## Reading GPS location data using the GPS GT-U7 Module
 
 #### What you will be using:
 - [Arduino IDE](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson5/screenshots/arduino-ide.png)
@@ -22,7 +22,7 @@
 - [Breadboard](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson5/screenshots/breadboard.png)
 - [Jumper Wires](https://github.com/StateFarm-STEM/pyinthesky/blob/lesson-3-continued/lesson4/screenshots/4635-02.jpg)
 
-#### Note: I had some issues using the GPS module from inside my garage. Here are some things you can try to get good results...<br>
+#### Note: I had some issues using the GPS module from inside my garage. If you do not get data on your serial monitor. Here are some things you can try to get good results...<br>
 - try working near a window with the best view of the sky
 - try taking your laptop outside
 - if it works where you like to work, then great
