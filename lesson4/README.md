@@ -10,6 +10,7 @@
 - Breadboard a circuit
 - Read GPS sensor data
 - Print the GPS sensor data to the serial port
+- Monitor data on the serial monitor
 
 ## Read GPS location data using the GPS GT-U7 Module
 
@@ -46,8 +47,10 @@ Right-click the following two links and choose "save link as" saving them to the
 #### Helpful video shortcuts
 - [connect the GPS GT-U7 to the Arduino](https://youtu.be/7zw2ULu73DY?t=54)
 - [write the code and run it on the Arduino](https://youtu.be/7zw2ULu73DY?t=180)
-
+#### Tips
+- make sure that your wires are in the correct pins. The pin labeled TXD should be routed to pin 10 on the Arduino. RXD on the GPS to pin 11. GND on the GPS should be to GND on the Arduino, VDC to 5 volts.
 #### Working project
 - [sketch-arduino-gps-gt-u7-read](https://github.com/StateFarm-STEM/pyinthesky/tree/main/my-workspace/sketch-arduino-gps-gt-u7-read)
 
 ### [Need help?](https://github.com/StateFarm-STEM/pyinthesky#need-some-help)
+
