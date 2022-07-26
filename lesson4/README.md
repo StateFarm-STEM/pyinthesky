@@ -40,7 +40,7 @@
 
 #### How to get the TinyGPSPlus library:
 - navigate to the sketch menu and hover over include library and then click manage libraries
-- type in TinyGPSPlus and install the library
+- type in TinyGPSPlus and install the library and then restart the IDE
 - copy and paste this code into a sketch and run it
 ``` 
 #include "TinyGPSPlus.h"
