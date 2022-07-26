@@ -39,7 +39,7 @@
 [How to use the GT U7 GPS module](https://youtu.be/7zw2ULu73DY)
 
 #### How to get the TinyGPSPlus library:
-- navigate to the sketch menu and select library manager
+- navigate to the sketch menu and hover over include library and then click manage libraries
 - type in TinyGPSPlus and install the library
 - copy and paste this code into a sketch and run it
 ``` -#include "TinyGPSPlus.h"
