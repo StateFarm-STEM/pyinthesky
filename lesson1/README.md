@@ -25,7 +25,7 @@
   -  This is used to prototype wiring and test to make sure things work before committing to soldering components together.
     - ![Breadboard](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/photos/breadboard.jpg)
   - ### [BMP-180 - Barometric Pressure/Temperature/Altitude Sensor](https://www.adafruit.com/product/1603)
-  - This is used to get the barometric pressure, and temperature of the air surrounding it, as well as the altitude that the sensor is at. This data is recorded every 30 seconds to the micro-SD card
+  - This is used to get the barometric pressure, and the temperature of the air surrounding it, as well as the altitude that the sensor is at. This data is recorded every 30 seconds to the micro-SD card
     - <img src="https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/photos/BMP_both.jpg" width="1000" >
   - ### [GPS Module](https://www.u-blox.com/en/product/neo-6-series)
   - This is how the balloon determines its latitude and longitude. The Arduino tells the GPS module to record its position every 30 seconds to the micro-SD card.
