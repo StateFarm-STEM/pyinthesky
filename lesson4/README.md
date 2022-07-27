@@ -95,7 +95,14 @@ void loop() {
 - [connect the GPS GT-U7 to the Arduino](https://youtu.be/7zw2ULu73DY?t=54)
 - [write the code and run it on the Arduino](https://youtu.be/7zw2ULu73DY?t=180)
 #### Tips
-- make sure that your wires are in the correct pins. The pin labeled TXD should be routed to pin 10 on the Arduino. RXD on the GPS to pin 11. GND on the GPS should be to GND on the Arduino, VDC to 5 volts.
+- Make sure everthing is wired correctly, if you did not catch the wiring in the video, use the chart below.
+
+**Pin on the GPS module** | **Pin on the Arduino**
+--------------- | --------------- 
+TXD   | Digital pin 10
+RXD   | Digital pin 11
+GND  | Any Ground pin 
+VDC   | 5 volts
 #### Working project
 - [sketch-arduino-gps-gt-u7-read](https://github.com/StateFarm-STEM/pyinthesky/tree/main/my-workspace/sketch-arduino-gps-gt-u7-read)
 
