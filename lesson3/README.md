@@ -17,10 +17,10 @@
 #### What you will be using:
 - [Arduino IDE](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/arduino-ide.png)
 - [Arduino Uno](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/arduino-uno-r3.png)
-- [BMP180 Sensor](https://github.com/StateFarm-STEM/pyinthesky/blob/lesson-3-continued/lesson3/screenshots/BMP%20both%20(2).jpg)
+- [BMP180 Sensor](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3/screenshots/bmp180.png)
 - [5 pin connector](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/5-pin-connector.png)
 - [Breadboard](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/breadboard.png)
-- [Jumper Wires](https://github.com/StateFarm-STEM/pyinthesky/blob/lesson-3-continued/lesson4/screenshots/4635-02.jpg)
+- [Jumper Wires](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3/screenshots/1956-02.jpg)
 
 #### Note: the BMP180 Sensor didn't detect the pressure and temp accurately until I soldered the 5 pin connector to the BMP180<br>
 
@@ -44,7 +44,7 @@
 ### Tips
 - the color of the wires do not matter as long as they are connected to the right pins
 - Here is a wiring diagram
-- ![Here is a wiring diagram](https://github.com/StateFarm-STEM/pyinthesky/blob/lesson-3-continued/lesson3/screenshots/bmpdiagram.png)
+- ![Here is a wiring diagram](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3/screenshots/bmpdiagram.png)
 - make sure that you have the librarys installed [found here](https://learn.adafruit.com/bmp085/using-the-bmp085)
 
 
@@ -55,7 +55,7 @@
 - if you get in error like this one <code>Error opening serial port 'COM3'. (Port not found)
 </code> while attempting to open your serial monitor, insure that your Arduino is still plugged in and everything is wired correctly
 
-#### Working Code - Do you really want to just copy and paste it?
+#### Working Code - if you get stuck click this link and copy and paste the code into your sketch
 - [sketch-arduino-bmp180-read](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-bmp180-read/sketch-arduino-bmp180-read.ino)
 
 ### [Need help?](https://github.com/StateFarm-STEM/pyinthesky#need-some-help)
