@@ -14,10 +14,10 @@
     - Latitude is recorded to map the flight path of the balloon
     - Longitude in conjunction with latitude we can plot the balloon’s location on a map 
     - Elevation is recorded for students to see how different factors can influence rate of ascent, peak elevation, etc. 
-  - YOU will be [saving the data](https://create.arduino.cc/projecthub/electropeak/sd-card-module-with-arduino-how-to-read-write-data-37f390) in a [CSV file](https://en.wikipedia.org/wiki/Comma-separated_values) in a micro-SD card on the tracker in the following format every 30 seconds of the flight for later analysis:
+  - Students will be [saving the data](https://create.arduino.cc/projecthub/electropeak/sd-card-module-with-arduino-how-to-read-write-data-37f390) in a [CSV file](https://en.wikipedia.org/wiki/Comma-separated_values) in a micro-SD card on the tracker in the following format every 30 seconds of the flight for later analysis:
     - time, latitude, longitude, altitude, temperature, humidity, pressure
   
-- To build and test this you will be using:
+- To build and test this students will be using:
   - ### [Arduino Uno](https://store.arduino.cc/products/arduino-uno-rev3)
   - This is a microcontroller. It is used to run code that stores data gathered from the onboard sensors.
     - ![Arduino UNO](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/photos/arduino_uno.jpg)
