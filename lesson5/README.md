@@ -1,4 +1,4 @@
-# Welcome to Lesson #6: Storing the data
+# Welcome to Lesson #5: Storing the data
 
 ## Working with SD card using the Arduino language
 
@@ -17,7 +17,7 @@
 - [Arduino Uno](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson6/screenshots/arduino-uno-r3.png)
 - [MicroSD Card Module](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson6/screenshots/bmp180.png)
 - [Breadboard](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson6/screenshots/breadboard.png)
-- Wires
+- [Wires](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3/screenshots/1956-02.jpg)
 
 #### What you will be learning:
 - How to connect the SD card to the Arduino using a breadboard
@@ -29,7 +29,8 @@
 
 ### Guide
 [SD Card Module with Arduino: How to Read/Write Data](https://create.arduino.cc/projecthub/electropeak/sd-card-module-with-arduino-how-to-read-write-data-37f390)
-
+### Tips
+- 
 #### Working project
 - [sketch-arduino-sdcard-write](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-sdcard-write/sketch-arduino-sdcard-write.ino)
 
