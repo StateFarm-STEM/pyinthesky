@@ -103,8 +103,6 @@ TXD   | Digital pin 10
 RXD   | Digital pin 11
 GND  | Any Ground pin 
 VDC   | 5 volts
-#### Working project
-- [sketch-arduino-gps-gt-u7-read](https://github.com/StateFarm-STEM/pyinthesky/tree/main/my-workspace/sketch-arduino-gps-gt-u7-read)
 
 ### [Need help?](https://github.com/StateFarm-STEM/pyinthesky#need-some-help)
 
