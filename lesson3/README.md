@@ -55,7 +55,7 @@
 - if you get in error like this one <code>Error opening serial port 'COM3'. (Port not found)
 </code> while attempting to open your serial monitor, insure that your Arduino is still plugged in and everything is wired correctly
 
-#### Working Code - Do you really want to just copy and paste it?
+#### Working Code - if you get stuck click this link and copy and paste the code into your sketch
 - [sketch-arduino-bmp180-read](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-bmp180-read/sketch-arduino-bmp180-read.ino)
 
 ### [Need help?](https://github.com/StateFarm-STEM/pyinthesky#need-some-help)
