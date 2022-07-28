@@ -17,10 +17,10 @@
 #### What you will be using:
 - [Arduino IDE](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson5/screenshots/arduino-ide.png)
 - [Arduino Uno](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson5/screenshots/arduino-uno-r3.png)
-- [GPS GT-U7 Sensor (GPS NEO 6M clone)](https://github.com/StateFarm-STEM/pyinthesky/blob/lesson-3-continued/lesson4/screenshots/gps-gt-u7.png)
+- [GPS GT-U7 Sensor (GPS NEO 6M clone)](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/gps-gt-u7.png)
 - [5 pin connector](https://raw.githubusercontent.com/StateFarm-STEM/pyinthesky/lesson-3-continued/lesson4/screenshots/2076789.webp)
 - [Breadboard](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson5/screenshots/breadboard.png)
-- [Jumper Wires](https://github.com/StateFarm-STEM/pyinthesky/blob/lesson-3-continued/lesson4/screenshots/4635-02.jpg)
+- [Jumper Wires](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3/screenshots/1956-02.jpg)
 
 #### Note: I had some issues using the GPS module from inside my garage. If you do not get data on your serial monitor. Here are some things you can try to get good results...<br>
 - try working near a window with the best view of the sky
@@ -99,16 +99,15 @@ void loop() {
 
 #### Helpful video shortcuts
 - [connect the GPS GT-U7 to the Arduino](https://youtu.be/7zw2ULu73DY?t=54)
-- [write the code and run it on the Arduino](https://youtu.be/7zw2ULu73DY?t=180)
 #### Tips
 - Make sure everthing is wired correctly, if you did not catch the wiring in the video, use the chart below.
 
-**Pin on the GPS module** | **Pin on the Arduino**
---------------- | --------------- 
-TXD   | Digital pin 10
-RXD   | Digital pin 11
-GND  | Any Ground pin 
-VDC   | 5 volts
+  **Pin on the GPS module** | **Pin on the Arduino**
+  --------------- | --------------- 
+  TXD   | Digital pin 10
+  RXD   | Digital pin 11
+  GND  | Any Ground pin 
+  VDC   | 5 volts
 
 ### [Need help?](https://github.com/StateFarm-STEM/pyinthesky#need-some-help)
 
