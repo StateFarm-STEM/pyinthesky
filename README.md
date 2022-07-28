@@ -1,4 +1,4 @@
-# pyinthesky
+# Pyinthesky
 
 ## Py in The Sky - High Altitude Balloon Data Tracker
 
