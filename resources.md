@@ -2,7 +2,7 @@
 
 ## ***Amateur Radio***
 You maybe asking why is this here? Well, the primary tracking system on the balloon uses a form of radio called APRS, without it you would never be able to find your baloon. There is some really cool nerdy stuff that has many scholorship oppportunties within the radio world (hint hint hint)!
-- [ARRL](arrl.org)
+- [ARRL](https://www.arl.org/)
 - [APRS](http://aprs.org/) which you need a amateur licensce to operate.
 - [LightAPRS-W (+WSPR) Tracker](http://qrp-labs.com/lightaprs-w.html)
 - [Technician study webinar](https://youtu.be/0wwnOPaF1qI)
