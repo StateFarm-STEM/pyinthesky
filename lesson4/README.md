@@ -39,7 +39,7 @@
 [How to use the GT U7 GPS module](https://youtu.be/7zw2ULu73DY)
 
 
-**How to install the library**
+**Video on how to install the library**
 
 https://user-images.githubusercontent.com/91698286/181350144-9dad1089-92e9-4f3b-83c9-cef32049bd07.mp4
 
