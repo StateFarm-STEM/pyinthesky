@@ -55,6 +55,15 @@ You will now take everything you learned and apply them all into a single projec
 - you should have completed all the lessons successfully
 - you should have a conceptual idea of how each line in the code you have written relates to what is happening when it runs
 
+
+
+### Objectives
+- get the data logger ready for luanch 
+- it needs to be logging data to the sd card via sd card with all the sensors functioning 
+- It is reccomended to write some psudeo code before jumping into getting the final logger working, for info on psudeo code click [here](https://www.geeksforgeeks.org/how-to-write-a-pseudo-code/?adlt=strict)
+- 
+
+
 ### Objectives
 - Learn how to wire the sensor and modules to the Arduino at the same time
   - we will have to change the pin numbers in the code to match the new pins you use for each module
