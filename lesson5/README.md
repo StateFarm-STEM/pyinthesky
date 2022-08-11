@@ -3,14 +3,13 @@
 ## Working with SD card using the Arduino language
 
 #### Pre-requisites:
-- you have successfully completed the [blinky lights lesson](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson2#welcome-to-lesson-2)
-- if not, do that first
+- it is recomended that you have successfully completed the [blinky lights lesson](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson2#welcome-to-lesson-2)
+
 
 #### Objectives:
 - Breadboard a circuit
 - Read and write from the SD card that is wired up to the Arduino 
 
-## Measure Pressure and Temperature using the BMP180
 
 #### What you will be using:
 - [Arduino IDE](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson6/screenshots/arduino-ide.png)
