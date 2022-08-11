@@ -8,7 +8,7 @@
 
 #### Objectives:
 - Breadboard a circuit
-- Create a file with some data on the sd card
+- Read and write from the SD card that is wired up to the Arduino 
 
 ## Measure Pressure and Temperature using the BMP180
 
