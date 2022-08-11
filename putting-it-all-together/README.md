@@ -22,9 +22,7 @@ You will now take everything you learned and apply them all into a single projec
 - you learned how to turn on an off the light on the Arduino Uno
 - you learned how to make your code sleep briefly between turning the light on and off
 
-### Lesson 3 - we skippedthis lesson
-
-### Lesson 4
+### Lesson 3
 
 #### key points
 - you learned how to use a bread board with your Arduino and the BMP180 sensor
@@ -33,14 +31,14 @@ You will now take everything you learned and apply them all into a single projec
 - you learned how to use variables to hold the individual measurements and write them out to the serial port
 - you learned how to view the measurements as your code ran on the Arduino using the Serial Port Monitor
 
-### Lesson 5
+### Lesson 4
 
 #### key points
 - you pretty much repeated the same things you learned in Lesson 4 as to how to connect to a module or sensor
 - one exception is that you learned you needed a different library for the GPS module
 - the other exception is that the code looked different, but similar too
 
-### Lesson 6
+### Lesson 5
 
 #### key points
 - you pretty much repeated the same things you learned in Lesson 4 and 5 as to how to connect to a module or sensor
