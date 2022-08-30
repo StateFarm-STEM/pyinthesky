@@ -3,11 +3,10 @@
 ## Working with GPS sensor data using the Arduino language
 
 #### Pre-requisites:
-- you have successfully completed the [blinky lights lesson](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson2#welcome-to-lesson-2)
-- if not, do that first
+- it is reccomended that you have successfully completed the [blinky lights lesson](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson2#welcome-to-lesson-2)
 
 #### Objectives:
-- Breadboard a circuit
+- Wire up the Gps to the Arduino
 - Read GPS sensor data
 - Print the GPS sensor data to the serial port
 - Monitor data on the serial monitor in the Arduino IDE
