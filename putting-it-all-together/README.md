@@ -36,7 +36,7 @@ You will now take everything you learned and apply them all into a single projec
 #### key points
 - you pretty much repeated the same things you learned in Lesson 4 as to how to connect to a module or sensor
 - one exception is that you learned you needed a different library for the GPS module
-- the other exception is that the code looked different, but similar too
+- the other exception is that the code looked different, but similar 
 
 ### Lesson 5
 
