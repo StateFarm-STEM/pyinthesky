@@ -39,8 +39,8 @@
   
   
 # Basic guide to electronics safety 
- - while working with any type of electronics, in this case an Arduino, make sure that the surface that you are working on is not conductive. Some examples of suitable materials to work on are plastic tables or wooden tables. Really stay away from any metal surfaces so you do not short the components that you are working on.
- - in this lesson breadboards will be used rather frequently. In order to safely use a breadboard a couple of concepts must be understood. 
+ - While working with any type of electronics, in this case an Arduino, make sure that the surface that you are working on is not conductive. Some examples of suitable materials to work on are plastic tables or wooden tables. Really stay away from any metal surfaces so you do not short the components that you are working on.
+ - In this lesson breadboards will be used rather frequently. In order to safely use a breadboard a couple of concepts must be understood. 
     - First of all, what is a breadboard?
       - a breadboard is a piece of plastic with conductive material layered in channels in order to protype circuits without having to solder anything
       - There are three main parts to a bread board, the power rails, the terminal strips, and the DIP support channel.
