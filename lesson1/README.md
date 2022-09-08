@@ -44,7 +44,7 @@
     - First of all, what is a breadboard?
       - a breadboard is a piece of plastic with conductive material layered in channels in order to protype circuits without having to solder anything
       - There are three main parts to a bread board, the power rails, the terminal strips, and the DIP support channel.
-      - The DIP support channel is the channel that runs through the middle of the board. It splits the terminal strips into two and makes it so many different Integrated can be used in a smaller space. Each pin of an IC (integrated circuit) is unique and needs to be separate from the other pits, hence the need for a channel that breaks up the terminal strips. 
+      - The DIP support channel is the channel that runs through the middle of the board. It splits the terminal strips into two and makes it so many different integrated circuits can be used while taking up minimum space on the breadboard. Each pin of the IC (integrated circuit) is unique and needs to be separate from the other pins, hence the need for a channel that breaks up the terminal strips. 
       - Terminal strips are the strips of metal that connect the rows of pins, they are hidden, but important. This means that all of the holes on either side of the DIP channel are connected to each other. 
       - The power rails are typically accompanied by a blue or red line. These are used to provide a power source and a common ground. Blue means negative or ground and red means positive or power.
     - If you want more information on breadboards please refer to <a href=https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all title="How to Use a Breadboard">This article</a>
