@@ -38,21 +38,20 @@
   - This stores all the data so you can access it later. 
   
   
- # Basic guide to electronics saftey 
- - while working with any type of electronics, in this case an arduino, make sure that the surface that you are working on is not conductive. Some examples of suitable materials to work on are plastic tables or wooden tables. Really stay away from any metal surfaces so you do not short what you are working on.
+# Basic guide to electronics safety 
+ - while working with any type of electronics, in this case an Arduino, make sure that the surface that you are working on is not conductive. Some examples of suitable materials to work on are plastic tables or wooden tables. Really stay away from any metal surfaces so you do not short the components that you are working on.
  - in this lesson breadboards will be used rather frequently. In order to safely use a breadboard a couple of concepts must be understood. 
-   - First of all, what is a bread board?
-     - a breadboard is a piece of plastic with conductive material layed in channels in order to protype circuits without having to solder anything
-   - There are three main parts to a bread board, the powerrails, the terminal strips, and the DIP support channel.
-     - The DIP support channel is the channel that runs through the middle of the board. It splits the terminal strips into two and makes it so many different Integrated can be used in a smaller space. Each pin of an IC (integrated circuit) is unique and needs to be seperate from the other pits, hence the need for a chennel that breaks up the terminal strips. 
-     - Terminal strips are the strips of metal that connect the rows of pins, they are hidden, but important. This means that all of the holes on either side of the DIP channel are connected to eachother. 
-     - The powerrails are typically acompanied by a blue or red line. These are used to provide a power source and a common ground. Blue means negative or ground and red means positive or power.
-     - If you want more information on breadboards please refer to <a href="https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all" title="How to Use a Breadboard">This article</a>
+    - First of all, what is a breadboard?
+      - a breadboard is a piece of plastic with conductive material layered in channels in order to protype circuits without having to solder anything
+      - There are three main parts to a bread board, the power rails, the terminal strips, and the DIP support channel.
+      - The DIP support channel is the channel that runs through the middle of the board. It splits the terminal strips into two and makes it so many different Integrated can be used in a smaller space. Each pin of an IC (integrated circuit) is unique and needs to be separate from the other pits, hence the need for a channel that breaks up the terminal strips. 
+      - Terminal strips are the strips of metal that connect the rows of pins, they are hidden, but important. This means that all of the holes on either side of the DIP channel are connected to each other. 
+      - The power rails are typically accompanied by a blue or red line. These are used to provide a power source and a common ground. Blue means negative or ground and red means positive or power.
+    - If you want more information on breadboards please refer to <a href=https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all title="How to Use a Breadboard">This article</a>
   - Another thing that is important to keep in mind is polarity
-     - electronics only work one way, if you connect the positive wire to the negative terminal, and the negetive wire to the positive terminal, you may ruin the component you are working with.
-     - in order to prevent this ***unplug the arduino while you are wiring components and double check that it is correct acording to the picture/pinout chart***
+     - electronics only work one way, if you connect the positive wire to the negative terminal, and the negative wire to the positive terminal, you may ruin the component you are working with.
+     - in order to prevent this ***unplug the Arduino while you are wiring components and double check that it is correct according to the picture/pinout chart***
      
          
-    
+Feel free to check out the links I have added in the <a href=https://github.com/StateFarm-STEM/pyinthesky/blob/main/resources.md title="Resource Page"> This article</a>
 
-Feel free to check out the links I have added in the <a href="https://github.com/StateFarm-STEM/pyinthesky/blob/main/resources.md" title="Reasource Page"> This article</a>
