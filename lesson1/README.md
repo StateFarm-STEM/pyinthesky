@@ -36,5 +36,14 @@
     
   - ### [Micro SD card](https://en.wikipedia.org/wiki/SD_card)
   - This stores all the data so you can access it later. 
+  
+  
+ # Basic guide to electronics saftey 
+ - while working with any type of electronics, in this case an arduino, make sure that the surface that you are working on is not conductive. Some examples of suitable materials to work on are plastic tables or wooden tables. Really stay away from any metal surfaces so you do not short what you are working on.
+ - in this lesson breadboards will be used rather frequently. In order to safely use a breadboard a couple of concepts must be understood. 
+   - First of all, what is a bread board?
+     - a breadboard is a piece of plastic with conductive material layed in chanells in order to protype circuits without having to solder anything
+   - There are three main parts to a bread board, the powerrails, the terminal strips, and the DIP support channel.   
+    
 
 Feel free to check out the links I have added in the [resource page](https://github.com/StateFarm-STEM/pyinthesky/blob/main/resources.md)
