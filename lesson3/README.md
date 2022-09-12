@@ -36,6 +36,15 @@
 ### Guide
 [Python with Arduino LESSON 9 Measuring Pressure and Temperature with the BMP180 Sensor](https://toptechboy.com/python-with-arduino-lesson-9-measuring-pressure-and-temperature-with-the-bmp180-sensor/)
 
+### Wiring diagram
+
+Connecting Up the BMP180 Pressure and Temperature Sensor
+| BMP180 Pin | Arduino Pin |
+| -------------- | :--------- | 
+Vin |	5V
+GND	| GND
+SCL	| A5
+SDA	| A4
 #### Helpful video shortcuts
 - [connect the BMP180 to the Arduino](https://youtu.be/z9AzZM1-Dns?t=105)
 - [how to add the Adafruit Library to the Arduino IDE](https://youtu.be/z9AzZM1-Dns?t=152)
