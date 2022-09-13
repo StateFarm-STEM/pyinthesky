@@ -47,8 +47,7 @@
       - The DIP support channel is the channel that runs through the middle of the board. It splits the terminal strips into two and makes it so many different integrated circuits can be used while taking up minimum space on the breadboard. Each pin of the IC (integrated circuit) is unique and needs to be separate from the other pins, hence the need for a channel that breaks up the terminal strips. 
       - Terminal strips are the strips of metal that connect the rows of pins, they are hidden, but important. This means that all of the holes on either side of the DIP channel are connected to each other. 
       - The power rails are typically accompanied by a blue or red line. These are used to provide a power source and a common ground. Blue means negative or ground and red means positive or power.
-      
-<img src="https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/photos/HabBreadboard.jpg" width="600" >     
+      <img src="https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/photos/HabBreadboard.jpg" width="600" >     
     - the red and blue arrows are pointing to the positive and negative power rails respectivley. The yellow arrow is illistrating which pin are connected. The pins are connected in the same direction as the yellow arrow, but seperated by the channel in the middle. They are connected horizontally and not verically in this picture. 
     - If you want more information on breadboards please refer to <a href=https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all title="How to Use a Breadboard">This article</a>
   - Another thing that is important to keep in mind is polarity
