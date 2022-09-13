@@ -48,7 +48,7 @@
       - Terminal strips are the strips of metal that connect the rows of pins, they are hidden, but important. This means that all of the holes on either side of the DIP channel are connected to each other. 
       - The power rails are typically accompanied by a blue or red line. These are used to provide a power source and a common ground. Blue means negative or ground and red means positive or power.
       <img src="https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/photos/HabBreadboard.jpg" width="600" >     
-    - the red and blue arrows are pointing to the positive and negative power rails respectivley. The yellow arrow is illistrating which pin are connected. The pins are connected in the same direction as the yellow arrow, but seperated by the channel in the middle. They are connected horizontally and not verically in this picture. 
+    - The red and blue arrows are pointing to the positive and negative power rails respectivley. The yellow arrow is illistrating which pin are connected. The pins are connected in the same direction as the yellow arrow, but seperated by the channel in the middle. They are connected horizontally and not verically in this picture. 
     - If you want more information on breadboards please refer to <a href=https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all title="How to Use a Breadboard">This article</a>
   - Another thing that is important to keep in mind is polarity
      - electronics only work one way, if you connect the positive wire to the negative terminal, and the negative wire to the positive terminal, you may ruin the component you are working with.
