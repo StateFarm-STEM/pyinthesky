@@ -53,7 +53,3 @@
   - Another thing that is important to keep in mind is polarity:
      - electronics only work one way, if you connect the positive wire to the negative terminal, and the negative wire to the positive terminal, you may ruin the component you are working with.
      - in order to prevent this ***unplug the Arduino while you are wiring components and always double check that it is correct according to the picture/pinout chart***
-
-         
-Feel free to check out the links I have added in the <a href=https://github.com/StateFarm-STEM/pyinthesky/blob/main/resources.md title="Resource Page"> This article</a>
-
