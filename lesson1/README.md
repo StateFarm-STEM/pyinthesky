@@ -39,9 +39,9 @@
   
   
 # Basic guide to electronics safety 
- - While working with any type of electronics, in this case an Arduino, make sure that the surface that you are working on is not conductive. Some examples of suitable materials to work on are plastic tables or wooden tables. Really stay away from any metal surfaces so you do not short the components that you are working on.
+ - While working with any type of electronics, in this case an Arduino, make sure that the surface that you are working on is not conductive. Some examples of suitable materials to work on are plastic tables or wooden tables. Stay away from any metal surfaces so you do not short the components that you are working on.
  - In this lesson breadboards will be used rather frequently. In order to safely use a breadboard a couple of concepts must be understood. 
-    - First of all, what is a breadboard?
+    - First of all, what is a breadboard:
       - a breadboard is a piece of plastic with conductive material layered in channels in order to protype circuits without having to solder anything
       - There are three main parts to a bread board, the power rails, the terminal strips, and the DIP support channel.
       - The DIP support channel is the channel that runs through the middle of the board. It splits the terminal strips into two and makes it so many different integrated circuits can be used while taking up minimum space on the breadboard. Each pin of the IC (integrated circuit) is unique and needs to be separate from the other pins, hence the need for a channel that breaks up the terminal strips. 
@@ -50,9 +50,9 @@
       <img src="https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/photos/HabBreadboard.jpg" width="600" >     
     - The red and blue arrows are pointing to the positive and negative power rails respectivley. The yellow arrow is illistrating which pin are connected. The pins are connected in the same direction as the yellow arrow, but seperated by the channel in the middle. They are connected horizontally and not verically in this picture. 
     - If you want more information on breadboards please refer to <a href=https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard/all title="How to Use a Breadboard">This article</a>
-  - Another thing that is important to keep in mind is polarity
+  - Another thing that is important to keep in mind is polarity:
      - electronics only work one way, if you connect the positive wire to the negative terminal, and the negative wire to the positive terminal, you may ruin the component you are working with.
-     - in order to prevent this ***unplug the Arduino while you are wiring components and double check that it is correct according to the picture/pinout chart***
+     - in order to prevent this ***unplug the Arduino while you are wiring components and always double check that it is correct according to the picture/pinout chart***
 
          
 Feel free to check out the links I have added in the <a href=https://github.com/StateFarm-STEM/pyinthesky/blob/main/resources.md title="Resource Page"> This article</a>
