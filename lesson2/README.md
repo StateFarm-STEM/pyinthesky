@@ -34,5 +34,8 @@
 
 #### Working project
 - [sketch-blink-onboard-led](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/blink-onboard-led/blink-onboard-led.ino)
+- if you are having trouble please make sure that the usb cord that came with your kit is plugged in to both the ardiuno and the pc/laptop that you are using
+
 
 ### [Need help?](https://github.com/StateFarm-STEM/pyinthesky#need-some-help)
+-
