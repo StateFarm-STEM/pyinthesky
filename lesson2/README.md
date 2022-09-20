@@ -34,6 +34,19 @@
 
 #### Working project
 - [sketch-blink-onboard-led](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/blink-onboard-led/blink-onboard-led.ino)
+```void setup() {
+  // put your setup code here, to run once:
+  pinMode(13,OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(13,HIGH);
+  delay(100);
+  digitalWrite(13,LOW); 
+  delay(900);
+}
+```
 - if you are having trouble please make sure that the usb cord that came with your kit is plugged in to both the ardiuno and the pc/laptop that you are using
 
 
