@@ -101,6 +101,12 @@ void loop() {
 #### Tips
 - Make sure everthing is wired correctly, if you did not catch the wiring in the video, use the chart below.
 
+<img src="https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/GPSback.jpg" width="500">
+<img src="https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/ArduinoBackGPS.jpg" width="500">
+
+<img src="https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/ArdiunoFrountGPS.jpg" width="500">
+
+
   **Pin on the GPS module** | **Pin on the Arduino**
   --------------- | --------------- 
   TXD   | Digital pin 10
