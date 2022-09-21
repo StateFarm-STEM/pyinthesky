@@ -32,6 +32,17 @@
 - here is a wiring diagram
 
 
+Pin on Sd card reader | Pin on Ardiuno  
+------ | ------
+GND   | GND  
+VCC   | 5V  
+MISO   | 12  
+MOSI   | 11  
+SCK   | 13  
+CS   | 10  
+
+
+
 #### Working project
 - [sketch-arduino-sdcard-write](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-sdcard-write/sketch-arduino-sdcard-write.ino)
 
