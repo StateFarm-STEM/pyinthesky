@@ -36,7 +36,12 @@
 ### Guide
 [Python with Arduino LESSON 9 Measuring Pressure and Temperature with the BMP180 Sensor](https://toptechboy.com/python-with-arduino-lesson-9-measuring-pressure-and-temperature-with-the-bmp180-sensor/)
 
-### Wiring diagram
+### Wiring help
+ <img src="https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3/screenshots/BMP_BACKWIRE.jpg" width="500" >
+ <img src="https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3/screenshots/BMPWIRE2.jpg" width="500" >
+
+- Remember that you don't have to use the same color wires I do, but make sure they connect the same way. 
+
 
 Connecting Up the BMP180 Pressure and Temperature Sensor
 | BMP180 Pin | Arduino Pin |
