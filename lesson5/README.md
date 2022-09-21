@@ -31,7 +31,6 @@
 ### Tips
 - here is a wiring diagram
 
-<img src="https://raw.githubusercontent.com/StateFarm-STEM/pyinthesky/main/lesson5/screenshots/ds3231-sd-card-module-circuit_1rirM4OoVj.avif" width="475"  >
 
 #### Working project
 - [sketch-arduino-sdcard-write](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-sdcard-write/sketch-arduino-sdcard-write.ino)
