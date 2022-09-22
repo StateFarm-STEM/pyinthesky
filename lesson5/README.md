@@ -28,9 +28,9 @@
 
 ### Guide
 [SD Card Module with Arduino: How to Read/Write Data](https://create.arduino.cc/projecthub/electropeak/sd-card-module-with-arduino-how-to-read-write-data-37f390)
-### Tips
-- here is a wiring diagram
-
+### Wiring
+- here is a wiring chart
+- **unplug arduino from computer before doing this**
 
 Pin on SD card reader | Pin on Ardiuno  
 ------ | ------
@@ -42,6 +42,11 @@ SCK   | 13
 CS   | 10  
 
 
+<img src="https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson5/screenshots/SDCardSIDE.jpg" width="500" >
+<img src="https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson5/screenshots/ArduinoSdcard1.jpg" width="500" >
+<img src="https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson5/screenshots/ArduinoSDcard2.jpg" width="500" >
+
+- Remeber you do not have to use the same color of jumper wire as this, but insure that your connections are the same. 
 
 #### Working project
 - [sketch-arduino-sdcard-write](https://github.com/StateFarm-STEM/pyinthesky/blob/main/my-workspace/sketch-arduino-sdcard-write/sketch-arduino-sdcard-write.ino)
