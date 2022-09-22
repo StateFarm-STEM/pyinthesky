@@ -32,7 +32,7 @@
 - here is a wiring diagram
 
 
-Pin on Sd card reader | Pin on Ardiuno  
+Pin on SD card reader | Pin on Ardiuno  
 ------ | ------
 GND   | GND  
 VCC   | 5V  
