@@ -73,11 +73,10 @@ You will now take everything you learned and apply them all into a single projec
   - convert the pseudo code into code
 - Learn how to debug your code when things aren't working as expected
 
-### Extra Credit
-- functions, they help with readability and repeatable tasks
 
 
-### Working Code - I encourage you to try your best to make your own before using this code
+
+### Working Code - Copy and paste this into your sketch 
 
 
 ``` 
