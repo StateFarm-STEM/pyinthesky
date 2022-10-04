@@ -23,14 +23,14 @@
 - How to create a new Arduino Sketch project using the SDI Library
 - Write the code in the Arduino IDE and upload it to the Arduino
   - create a file on the SD card
-  - write some data to the SD card
+  - Write some data to the SD card
 - Watch your code run on the Arduino using Arduino IDE's serial monitor
 
 ### Guide
 [SD Card Module with Arduino: How to Read/Write Data](https://create.arduino.cc/projecthub/electropeak/sd-card-module-with-arduino-how-to-read-write-data-37f390)
 ### Wiring
-- here is a wiring chart
-- **unplug the Ardiuno from computer before doing this**
+- Here is a wiring chart
+- **Unplug the Ardiuno from computer before doing this**
 
 Pin on SD card reader | Pin on Ardiuno  
 ------ | ------
