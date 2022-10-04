@@ -23,7 +23,7 @@
 
 #### Note: I had some issues using the GPS module from inside my garage. If you do not get data on your serial monitor. Here are some things you can try to get good results...<br>
 - Try working near a window with the best view of the sky
-- Try taking your laptop outside
+- Try taking your laptop outside along with the Arduino and all of its components that are connected
 - If it works where you like to work, then great
 
 #### What you will be learning:
