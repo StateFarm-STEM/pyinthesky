@@ -30,8 +30,8 @@
 - How to connect the GPS GT-U7 to the Arduino without using a breadboard (changes it up just a little here compared to lesson 3)
 - How to create a new Arduino Sketch project using the TinyGPSPlus Library
 - Write the code in the Arduino IDE and upload it to the Arduino
-  - read Latitude, Longitude, Altitude, speed, and the number of satellites you are connected to from the GPS module
-  - print your results to the Arduino's serial port
+  - Read Latitude, Longitude, Altitude, speed, and the number of satellites you are connected to from the GPS module
+  - Print your results to the Arduino's serial port
 - Watch your code run on the Arduino using Arduino IDE's serial monitor
 
 ## Videos
@@ -44,9 +44,9 @@ https://user-images.githubusercontent.com/91698286/181350144-9dad1089-92e9-4f3b-
 
 
 #### How to get the TinyGPSPlus library:
-- navigate to the sketch menu and hover over include library and then click manage libraries
-- type in TinyGPSPlus and install the library and then restart the IDE
-- copy and paste this code into a sketch and run it
+- Navigate to the sketch menu and hover over include library and then click manage libraries
+- Type in TinyGPSPlus and install the library and then restart the IDE
+- Copy and paste this code into a sketch and run it
 ``` 
 #include "TinyGPSPlus.h"
 #include <SoftwareSerial.h>
