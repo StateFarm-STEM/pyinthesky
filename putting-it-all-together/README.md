@@ -1,7 +1,7 @@
 
 ## Putting it all together
 
-You will now take everything you learned and apply them all into a single project that will take those measurements and GPS coordindates writing that information out to the Micro SD card using a data format called CSV (comma separated values).
+The goal for this lesson is to take everything you learned and apply them all into a single project that will take those measurements and GPS coordindates writing that information out to the Micro SD card using a data format called CSV (comma separated values).
 
 
 
@@ -35,16 +35,14 @@ You will now take everything you learned and apply them all into a single projec
 ### Lesson 4
 
 #### key points
-- you pretty much repeated the same things you learned in Lesson 4 as to how to connect to a module or sensor
-- one exception is that you learned you needed a different library for the GPS module
-- the other exception is that the code looked different, but similar too
+- you pretty much repeated the same things you learned in Lesson 4 such as connecting the Ardiuno to a module or sensor with the expetion being you used a different library in the code
 
 ### Lesson 5
 
 #### key points
 - you pretty much repeated the same things you learned in Lesson 4 and 5 as to how to connect to a module or sensor
 - one exception is that you learned you needed a different library for the Micro SD card module
-- the other exception is that you created a file on the card and wrote some data to the file
+- the other exception is what the code was wrote to do, in this case it was to read and write an sd card
 
 
 
@@ -57,7 +55,7 @@ You will now take everything you learned and apply them all into a single projec
 - you should have a conceptual idea of how each line in the code you have written relates to what is happening when it runs
 
 ### Objectives
-- Learn how to wire the sensor and modules to the Arduino at the same time
+- Learn how to wire all the sensors and modules to the Arduino at the same time
   - we will have to change the pin numbers in the code to match the new pins you use for each module
 - Learn what psuedo code is and write the pseudo code for the new program
 - Learn just a little more about variables
