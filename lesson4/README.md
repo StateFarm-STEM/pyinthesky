@@ -22,9 +22,9 @@
 - [Jumper Wires](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3/screenshots/1956-02.jpg)
 
 #### Note: I had some issues using the GPS module from inside my garage. If you do not get data on your serial monitor. Here are some things you can try to get good results...<br>
-- try working near a window with the best view of the sky
-- try taking your laptop outside
-- if it works where you like to work, then great
+- Try working near a window with the best view of the sky
+- Try taking your laptop outside
+- If it works where you like to work, then great
 
 #### What you will be learning:
 - How to connect the GPS GT-U7 to the Arduino without using a breadboard (changes it up just a little here compared to lesson 3)
