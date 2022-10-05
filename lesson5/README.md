@@ -30,7 +30,7 @@
 [SD Card Module with Arduino: How to Read/Write Data](https://create.arduino.cc/projecthub/electropeak/sd-card-module-with-arduino-how-to-read-write-data-37f390)
 ### Wiring
 - Here is a wiring chart
-- **Unplug the Ardiuno from computer before doing this**
+- **Unplug the Ardiuno from the computer before doing this**
 
 Pin on SD card reader | Pin on Ardiuno  
 ------ | ------
