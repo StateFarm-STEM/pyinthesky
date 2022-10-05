@@ -43,6 +43,7 @@ Remember that you don't have to use the same color wires I do, but make sure the
 
 
 ### Connecting Up the BMP180 Pressure and Temperature Sensor
+**Unplug the Ardiuno from computer before doing this**
 | BMP180 Pin | Arduino Pin |
 | -------------- | :--------- | 
 Vin |	5V
