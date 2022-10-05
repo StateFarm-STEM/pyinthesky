@@ -30,6 +30,11 @@
 
 - Remember you do not have to use the same color of jumper wire as this, but insure that your connections are the same. 
 - **Unplug the Ardiuno from the computer while you are wiring it up**
+#### Wiring the Ardiuno to the Breadboard
+Pin on the Ardiuno | Pin on the Breadboard
+------ | ------
+5v | Power on the breadboard
+GND  | GND on the breadboard
 #### Wiring the SD card
 Pin on SD card reader | Pin on Ardiuno/breadboard 
 ------ | ------
@@ -40,14 +45,14 @@ MOSI   | 11
 SCK   | 13  
 CS   | 10  
 #### Wiring the BMP 180
-Pin on SD card reader | Pin on Ardiuno/breadboard 
+Pin on the BMP 180 | Pin on Ardiuno/breadboard 
 ------ | ------
 VIN | Power on the breadboard
 GND   | GND on the breadboard
 SCL   | A5
 SDA   | A4 
 #### Wiring the GPS
-Pin on SD card reader | Pin on Ardiuno/breadboard 
+Pin on the GPS | Pin on Ardiuno/breadboard 
 ------ | ------
 VCC | Power on the breadboard
 GND   | GND on the breadboard
