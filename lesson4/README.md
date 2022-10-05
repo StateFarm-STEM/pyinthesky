@@ -100,7 +100,7 @@ void loop() {
 - [connect the GPS GT-U7 to the Arduino](https://youtu.be/7zw2ULu73DY?t=54)
 #### Tips
 - Make sure everthing is wired correctly, if you did not catch the wiring in the video, use the chart below.
-
+- **Unplug the Ardiuno from the computer before doing this**
 <img src="https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/GPSback.jpg" width="500">
 <img src="https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson4/screenshots/ArduinoBackGPS.jpg" width="500">
 
