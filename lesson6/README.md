@@ -3,11 +3,11 @@
 ## Working to make the final data logger
 
 #### Pre-requisites:
-- it is recomended that you have successfully completed all the previous lessons 
+- It is recommended that you have successfully completed all the previous lessons 
 
 #### Objectives:
 - Breadboard the final circuit
-- create a device that logs data such as humidity, altitude and tempurature onto a CSV file within a micro sd card. 
+- Create a device that logs data such as humidity, altitude and temperature onto a CSV file within a micro Sd card. 
 
 
 #### What you will be using:
@@ -21,22 +21,22 @@
 - [Wires](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3/screenshots/1956-02.jpg)
 
 #### What you will be learning:
-- How to connect multiple different sensors or devices to the ardiuno at the same time
-  -  This will involve using a breadboard to connect all the sensors back to the Ardiuno
+- How to connect multiple different sensors or devices to the Arduino at the same time
+  -  This will involve using a breadboard to connect all the sensors back to the Arduino
 - How to read a CSV file from the serial port
 
-### Wiring all the sensors and devices to the Ardiuno
+### Wiring all the sensors and devices to the Arduino
 
 
 - Remember you do not have to use the same color of jumper wire as this, but insure that your connections are the same. 
-- **Unplug the Ardiuno from the computer while you are wiring it up**
-#### Wiring the Ardiuno to the Breadboard
-Pin on the Ardiuno | Pin on the Breadboard
+- **Unplug the Arduino from the computer while you are wiring it up**
+#### Wiring the Arduino to the Breadboard
+Pin on the Arduino | Pin on the Breadboard
 ------ | ------
 5v | Power on the breadboard
 GND  | GND on the breadboard
 #### Wiring the SD card
-Pin on SD card reader | Pin on Ardiuno/breadboard 
+Pin on SD card reader | Pin on Arduino/breadboard 
 ------ | ------
 GND   | GND on the breadboard
 VCC   | Power on the breadboard
@@ -45,14 +45,14 @@ MOSI   | 11
 SCK   | 13  
 CS   | 10  
 #### Wiring the BMP 180
-Pin on the BMP 180 | Pin on Ardiuno/breadboard 
+Pin on the BMP 180 | Pin on Arduino/breadboard 
 ------ | ------
 VIN | Power on the breadboard
 GND   | GND on the breadboard
 SCL   | A5
 SDA   | A4 
 #### Wiring the GPS
-Pin on the GPS | Pin on Ardiuno/breadboard 
+Pin on the GPS | Pin on Arduino/breadboard 
 ------ | ------
 VCC | Power on the breadboard
 GND   | GND on the breadboard
