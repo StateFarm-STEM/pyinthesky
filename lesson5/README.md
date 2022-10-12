@@ -3,7 +3,7 @@
 ## Working with SD card using the Arduino language
 
 #### Pre-requisites:
-- it is recomended that you have successfully completed the [blinky lights lesson](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson2#welcome-to-lesson-2)
+- it is recommended that you have successfully completed the [blinky lights lesson](https://github.com/StateFarm-STEM/pyinthesky/tree/main/lesson2#welcome-to-lesson-2)
 
 
 #### Objectives:
@@ -30,9 +30,9 @@
 [SD Card Module with Arduino: How to Read/Write Data](https://create.arduino.cc/projecthub/electropeak/sd-card-module-with-arduino-how-to-read-write-data-37f390)
 ### Wiring
 - Here is a wiring chart
-- **Unplug the Ardiuno from the computer before doing this**
+- **Unplug the Arduino from the computer before doing this**
 
-Pin on SD card reader | Pin on Ardiuno  
+Pin on SD card reader | Pin on Arduino  
 ------ | ------
 GND   | GND  
 VCC   | 5V  
@@ -42,9 +42,9 @@ SCK   | 13
 CS   | 10  
 
 
-<img src="https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson5/screenshots/SDCardSIDE.jpg" width="500" >
-<img src="https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson5/screenshots/ArduinoSdcard1.jpg" width="500" >
-<img src="https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson5/screenshots/ArduinoSDcard2.jpg" width="500" >
+<img src=https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson5/screenshots/SDCardSIDE.jpg width="500" >
+<img src=https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson5/screenshots/ArduinoSdcard1.jpg width="500" >
+<img src=https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson5/screenshots/ArduinoSDcard2.jpg width="500" >
 
 - Remember you do not have to use the same color of jumper wire as this, but insure that your connections are the same. 
 
