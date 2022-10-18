@@ -265,5 +265,8 @@ void initBMP(){
 }
 ```
 
+### Trouble shooting
+- Sd card formating needs to be fat32 or I have had difficulty getting the program to run
+
 
 ### [Need help?](https://github.com/StateFarm-STEM/pyinthesky#need-some-help)
