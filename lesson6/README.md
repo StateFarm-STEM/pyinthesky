@@ -1,77 +1,63 @@
+# Welcome to Lesson #6: putting it all together
 
-## Putting it all together
+## Working to make the final data logger
 
-The goal for this lesson is to take everything you learned and apply them all into a single project that will take those measurements and GPS coordindates writing that information out to the Micro SD card using a data format called CSV (comma separated values).
+#### Pre-requisites:
+- It is recommended that you have successfully completed all the previous lessons 
 
-
-
-#### Let's recap what you learned up to this point...
-
-### Lesson 1
-
-### key points
-- you learned you will be writing code that will run on an Arduino that will fly to the stratosphere while taking measurements and gps coordinates along the way
-- you learned you will save these individual measurements and coordinates in a file on the Micro SD card
-- you learned this done every day across the US for modeling weather and predicting forecasts
-
-### Lesson 2
-
-#### key points
-- you learned how to download, install, and create your first working Arduino Sketch
-- you learned how to connect your Arduino Uno to your computer
-- you learned how to turn on an off the light on the Arduino Uno
-- you learned how to make your code sleep briefly between turning the light on and off
+#### Objectives:
+- Breadboard the final circuit
+- Create a device that logs data such as humidity, altitude and temperature onto a CSV file within a micro Sd card. 
 
 
-### Lesson 3
+#### What you will be using:
+- [Arduino IDE](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson6/screenshots/arduino-ide.png)
+- [Arduino Uno](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson6/screenshots/arduino-uno-r3.png)
+- [MicroSD Card Module](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson6/screenshots/bmp180.png)
+- [BMP 180](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/photos/BMP_both.jpg)
 
-#### key points
-- you learned how to use a bread board with your Arduino and the BMP180 sensor
-- you learned how to import a library needed to talk to the BMP180
-- you learned how to connect to the BMP sensor using a variable and take measurements
-- you learned how to use variables to hold the individual measurements and write them out to  the serial port
-- you learned how to view the measurements as your code ran on the Arduino using the Serial Port Monitor
+- [GPS module](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson1/photos/GPS_NEO-6M.JPG)
+- [Breadboard](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson6/screenshots/breadboard.png)
+- [Wires](https://github.com/StateFarm-STEM/pyinthesky/blob/main/lesson3/screenshots/1956-02.jpg)
 
-### Lesson 4
+#### What you will be learning:
+- How to connect multiple different sensors or devices to the Arduino at the same time
+  -  This will involve using a breadboard to connect all the sensors back to the Arduino
+- How to read a CSV file from the serial port
 
-#### key points
-- you pretty much repeated the same things you learned in Lesson 4 such as connecting the Ardiuno to a module or sensor with the expetion being you used a different library in the code
-
-### Lesson 5
-
-#### key points
-- you pretty much repeated the same things you learned in Lesson 4 and 5 as to how to connect to a module or sensor
-- one exception is that you learned you needed a different library for the Micro SD card module
-- the other exception is what the code was wrote to do, in this case it was to read and write an sd card
+### Wiring all the sensors and devices to the Arduino
 
 
-
-## HERE WE GO!
-
-### Pre-requisites
-- you should have a good grasp of using the breadboard to connect a module to the Arduino
-- you should have a good grasp of what part of the code needed to match the pins for each module
-- you should have completed all the lessons successfully
-- you should have a conceptual idea of how each line in the code you have written relates to what is happening when it runs
-
-### Objectives
-- Learn how to wire all the sensors and modules to the Arduino at the same time
-  - we will have to change the pin numbers in the code to match the new pins you use for each module
-- Learn what psuedo code is and write the pseudo code for the new program
-- Learn just a little more about variables
-  - name a variable (naming convention is an art form)
-  - give a variable data to hang on to
-  - data can be a reference to
-    - an object like the GPS module, BMP180 sensor, or the Micro SD card
-    - a piece of information like the temperature, altitude, date & time
-  - format a string using variables (voila...CSV format)
-- Learn just a little more about code structure - keep it simple!
-  - readability, it should sorta read like an outline or a story (in my humble opinion) :)
-  - reliability, it should always work and if it doesn't it should be able to recover
-  - convert the pseudo code into code
-- Learn how to debug your code when things aren't working as expected
-
-
+- Remember you do not have to use the same color of jumper wire as this, but insure that your connections are the same. 
+- **Unplug the Arduino from the computer while you are wiring it up**
+#### Wiring the Arduino to the Breadboard
+Pin on the Arduino | Pin on the Breadboard
+------ | ------
+5v | Power on the breadboard
+GND  | GND on the breadboard
+#### Wiring the SD card
+Pin on SD card reader | Pin on Arduino/breadboard 
+------ | ------
+GND   | GND on the breadboard
+VCC   | Power on the breadboard
+MISO   | 12  
+MOSI   | 11  
+SCK   | 13  
+CS   | 10  
+#### Wiring the BMP 180
+Pin on the BMP 180 | Pin on Arduino/breadboard 
+------ | ------
+VIN | Power on the breadboard
+GND   | GND on the breadboard
+SCL   | A5
+SDA   | A4 
+#### Wiring the GPS
+Pin on the GPS | Pin on Arduino/breadboard 
+------ | ------
+VCC | Power on the breadboard
+GND   | GND on the breadboard
+RXD | 4
+TXD  | 3
 
 
 ### Working Code - Copy and paste this into your sketch 
@@ -90,7 +76,7 @@ The goal for this lesson is to take everything you learned and apply them all in
  ** MOSI - pin 11
  ** MISO - pin 12
  ** CLK - pin 13
- ** CS - pin 4 (for MKRZero SD: SDCARD_SS_PIN)
+ ** CS - pin 10 (for MKRZero SD: SDCARD_SS_PIN)
 
   created  24 Nov 2010
   modified 9 Apr 2012
@@ -278,3 +264,9 @@ void initBMP(){
   }
 }
 ```
+
+### Trouble shooting
+- Sd card formating needs to be fat32 or I have had difficulty getting the program to run
+
+
+### [Need help?](https://github.com/StateFarm-STEM/pyinthesky#need-some-help)
